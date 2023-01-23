@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleDescView">
+        <attr name="title" format="string" />
+        <attr name="desc" format="string" />
+        <attr name="desc_hint" format="string" />
+        <attr name="desc_text_size" format="dimension" />
+        <attr name="desc_hint_text_size" format="dimension" />
+        <attr name="title_color" format="color" />
+        <attr name="desc_color" format="color" />
+        <attr name="desc_hint_color" format="color" />
+        <attr name="enable" format="boolean" />
+        <attr name="visibility_label" format="boolean" />
+        <attr name="counter_visibility" format="boolean" />
+        <attr name="title_width" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ReadMoreTextView">
+        <attr name="readMoreMaxLine" format="integer" />
+        <attr name="readMoreText" format="string|reference" />
+        <attr name="readMoreColor" format="color|reference" />
+    </declare-styleable>
+</resources>

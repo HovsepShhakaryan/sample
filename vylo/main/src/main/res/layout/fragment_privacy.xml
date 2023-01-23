@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.vylo.common.widget.MainNavigationBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.vylo.common.widget.DrawableTextView
+        android:id="@+id/responses_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_padding_size_medium_small_mid"
+        android:layout_marginTop="@dimen/margin_padding_size_xlarge_mid_small"
+        android:layout_marginEnd="@dimen/margin_padding_size_large_small_mid_mid" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/MainText.H8_9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_padding_size_medium_small_mid"
+        android:layout_marginEnd="@dimen/margin_padding_size_large_small_mid_mid"
+        android:text="@string/privacy_feature_coming_soon" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/half_one"
+        android:layout_marginTop="@dimen/margin_padding_size_xlarge"
+        android:background="@color/shadow" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/MainText.H4_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_padding_size_medium_small_mid"
+        android:layout_marginTop="@dimen/margin_padding_size_large"
+        android:layout_marginEnd="@dimen/margin_padding_size_large_small_mid_mid"
+        android:text="@string/privacy_connections" />
+
+    <com.vylo.common.widget.DrawableTextView
+        android:id="@+id/blocked_accounts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_padding_size_medium_small_mid"
+        android:layout_marginTop="@dimen/margin_padding_size_small_large"
+        android:layout_marginEnd="@dimen/margin_padding_size_large_small_mid_mid" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/MainText.H8_9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_padding_size_medium_small_mid"
+        android:layout_marginEnd="@dimen/margin_padding_size_large_small_mid_mid"
+        android:text="@string/privacy_feature_coming_soon" />
+
+    <com.vylo.common.widget.DrawableTextView
+        android:id="@+id/muted_accounts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_padding_size_medium_small_mid"
+        android:layout_marginTop="@dimen/margin_padding_size_medium_small_mid"
+        android:layout_marginEnd="@dimen/margin_padding_size_large_small_mid_mid" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/MainText.H8_9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_padding_size_medium_small_mid"
+        android:layout_marginEnd="@dimen/margin_padding_size_large_small_mid_mid"
+        android:text="@string/privacy_feature_coming_soon" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/half_one"
+        android:layout_marginTop="@dimen/margin_padding_size_xlarge"
+        android:background="@color/shadow" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

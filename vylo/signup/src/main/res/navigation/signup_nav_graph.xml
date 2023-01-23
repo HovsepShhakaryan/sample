@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signup_nav_graph"
+    app:startDestination="@id/signUpWithEmailFragment">
+
+    <fragment
+        android:id="@+id/signUpWithEmailFragment"
+        android:name="com.vylo.signup.signupinputemail.presentation.fragment.SignUpWithEmailFragment"
+        android:label="fragment_sign_up_input_email"
+        tools:layout="@layout/fragment_sign_up_input_email">
+        <action
+            android:id="@+id/action_signUpWithEmailFragment_to_signUpVerificationCodeFragment"
+            app:destination="@id/signUpVerificationCodeFragment" />
+        <action
+            android:id="@+id/action_signUpWithEmailFragment_to_signUpGenderFragment"
+            app:destination="@id/signUpGenderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpGenderFragment"
+        android:name="com.vylo.signup.signupinputdategender.presentation.fragment.SignUpGenderFragment"
+        android:label="fragment_sign_up_gender"
+        tools:layout="@layout/fragment_sign_up_gender">
+        <action
+            android:id="@+id/action_signUpGenderFragment_to_createPasswordFragment"
+            app:destination="@id/createPasswordFragment" />
+        <action
+            android:id="@+id/action_signUpGenderFragment_to_signUpCreateUsernameFragment"
+            app:destination="@id/signUpCreateUsernameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpCompleteFragment"
+        android:name="com.vylo.signup.signupcomplete.presentation.fragment.SignUpCompleteFragment"
+        android:label="fragment_sign_up_complete"
+        tools:layout="@layout/fragment_sign_up_complete">
+        <action
+            android:id="@+id/action_signUpCompleteFragment_to_signUpPickUpProfilePictureFragment"
+            app:destination="@id/signUpPickUpProfilePictureFragment" />
+        <action
+            android:id="@+id/action_signUpCompleteFragment_to_signUpWebViewFragment"
+            app:destination="@id/signUpWebViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createPasswordFragment"
+        android:name="com.vylo.signup.signupcreatepassword.presentation.fragment.SignUpCreatePasswordFragment"
+        android:label="fragment_create_password"
+        tools:layout="@layout/fragment_sign_up_create_password">
+        <action
+            android:id="@+id/action_createPasswordFragment_to_signUpCreateUsernameFragment"
+            app:destination="@id/signUpCreateUsernameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpCreateUsernameFragment"
+        android:name="com.vylo.signup.signupcreateusername.presentation.fragment.SignUpCreateUsernameFragment"
+        android:label="fragment_sign_up_create_username"
+        tools:layout="@layout/fragment_sign_up_create_username">
+        <action
+            android:id="@+id/action_signUpCreateUsernameFragment_to_signUpCompleteFragment"
+            app:destination="@id/signUpCompleteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpPickUpProfilePictureFragment"
+        android:name="com.vylo.signup.signupprofileimage.presentation.fragment.SignUpPickUpProfilePictureFragment"
+        android:label="fragment_sign_up_pick_up_profile_picture"
+        tools:layout="@layout/fragment_sign_up_pick_up_profile_picture">
+        <action
+            android:id="@+id/action_signUpPickUpProfilePictureFragment_to_signUpChooseCategoryFragment"
+            app:destination="@id/signUpChooseCategoryFragment" />
+        <action
+            android:id="@+id/action_signUpPickUpProfilePictureFragment_to_signUpDoNotMissOutFragment"
+            app:destination="@id/signUpDoNotMissOutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpChooseCategoryFragment"
+        android:name="com.vylo.signup.signupchoosecategory.presentation.fragment.SignUpChooseCategoryFragment"
+        android:label="fragment_sign_up_choose_category"
+        tools:layout="@layout/fragment_sign_up_choose_category">
+        <action
+            android:id="@+id/action_signUpChooseCategoryFragment_to_signUpDoNotMissOutFragment"
+            app:destination="@id/signUpDoNotMissOutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpDoNotMissOutFragment"
+        android:name="com.vylo.signup.signupdonotmissout.presentation.fragment.SignUpDoNotMissOutFragment"
+        android:label="fragment_sign_up_do_not_miss_out"
+        tools:layout="@layout/fragment_sign_up_do_not_miss_out">
+        <action
+            android:id="@+id/action_signUpDoNotMissOutFragment_to_signUpChooseCategoryFragment"
+            app:destination="@id/signUpChooseCategoryFragment" />
+        <action
+            android:id="@+id/action_signUpDoNotMissOutFragment_to_signUpPickUpProfilePictureFragment"
+            app:destination="@id/signUpPickUpProfilePictureFragment" />
+        <action
+            android:id="@+id/action_signUpDoNotMissOutFragment_to_onboardingFragment"
+            app:destination="@id/onboardingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpWebViewFragment"
+        android:name="com.vylo.signup.signupwebview.presentation.fragment.SignUpWebViewFragment"
+        android:label="fragment_sign_up_web_view"
+        tools:layout="@layout/fragment_sign_up_web_view">
+        <action
+            android:id="@+id/action_signUpWebViewFragment_to_signUpCompleteFragment"
+            app:destination="@id/signUpCompleteFragment" />
+        <action
+            android:id="@+id/action_signUpWebViewFragment_to_signUpVerificationCodeFragment"
+            app:destination="@id/signUpVerificationCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpVerificationCodeFragment"
+        android:name="com.vylo.signup.signupverificationcode.presentation.fragment.SignUpVerificationCodeFragment"
+        android:label="fragment_sign_up_verification_code"
+        tools:layout="@layout/fragment_sign_up_verification_code">
+        <action
+            android:id="@+id/action_signUpVerificationCodeFragment_to_signUpGenderFragment"
+            app:destination="@id/signUpGenderFragment" />
+        <action
+            android:id="@+id/action_signUpVerificationCodeFragment_to_signUpWebViewFragment"
+            app:destination="@id/signUpWebViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.vylo.signup.onboardingfragment.OnboardingFragment"
+        android:label="fragment_onboarding"
+        tools:layout="@layout/fragment_onboarding">
+        <action
+            android:id="@+id/action_onboardingFragment_to_readyAnimationFragment"
+            app:destination="@id/readyAnimationFragment"
+            app:enterAnim="@anim/fade_in_accross" />
+    </fragment>
+    <fragment
+        android:id="@+id/readyAnimationFragment"
+        android:name="com.vylo.signup.readyanimation.ReadyAnimationFragment"
+        android:label="fragment_ready_animation"
+        tools:layout="@layout/fragment_ready_animation" />
+</navigation>

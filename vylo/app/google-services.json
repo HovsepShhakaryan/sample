@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "136905785185",
+    "project_id": "vylo-69ead",
+    "storage_bucket": "vylo-69ead.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136905785185:android:b22369a279aa56088d0f20",
+        "android_client_info": {
+          "package_name": "com.vylo.androidapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "136905785185-nemvrppo2pjv5v9gq37ku69fr1o8jfgq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vylo.androidapplication",
+            "certificate_hash": "3d840271a684b3379719518f5a251031c6c5d31b"
+          }
+        },
+        {
+          "client_id": "136905785185-jgphqq5ai9a1o2a26bjbec3um7c93mvc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIWnO-S0fXNlyqVVk--kEwv5CMWrhG8cU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "136905785185-jgphqq5ai9a1o2a26bjbec3um7c93mvc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "136905785185-jjo9fjk4hvfb9rmujt9df1pqnenqf99c.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.vylo.iosApp",
+                "app_store_id": "1627569855"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/margin_padding_size_xxxlarge_mid"
+    android:background="@color/main"
+    android:paddingHorizontal="@dimen/margin_padding_size_medium_small_small_mid"
+    android:paddingVertical="@dimen/margin_padding_size_small_mid_small">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_back_nav"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/kebab"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/margin_padding_size_medium"
+        android:src="@drawable/ic_kebab"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/response_list"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/margin_padding_size_medium"
+        android:src="@drawable/ic_response_list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/kebab"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.vylo.common.widget.MainButton
+        android:id="@+id/button_respond"
+        android:layout_width="@dimen/square_rounded_corner_button_big_width"
+        android:layout_height="@dimen/square_rounded_corner_button_big_height"
+        android:layout_marginEnd="@dimen/margin_padding_size_small_small_mid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_responses"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.vylo.common.widget.MainButton
+        android:id="@+id/button_responses"
+        android:layout_width="@dimen/square_rounded_corner_button_big_width"
+        android:layout_height="@dimen/square_rounded_corner_button_big_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

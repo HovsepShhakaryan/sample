@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vylo_main_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/searchStartFragment"
+        android:name="com.vylo.main.globalsearchmain.searchstartscreen.presentation.fragment.SearchStartFragment"
+        android:label="SearchStartFragment"
+        tools:layout="@layout/fragment_global_search_start">
+        <action
+            android:id="@+id/action_searchStartFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_searchStartFragment_to_searchMainFragment"
+            app:destination="@id/searchMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.vylo.main.homefragment.presentation.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_searchStartFragment"
+            app:destination="@id/searchStartFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_videoFragment"
+            app:destination="@id/videoFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_webFragment"
+            app:destination="@id/webFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_followingFragment"
+            app:destination="@id/followingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_followingSearchFragment"
+            app:destination="@id/followingSearchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchMainFragment"
+        android:name="com.vylo.main.globalsearchmain.searchmain.presentation.fragment.SearchMainFragment"
+        android:label="SearchMainFragment"
+        tools:layout="@layout/fragment_search_main">
+        <action
+            android:id="@+id/action_searchMainFragment_to_searchStartFragment"
+            app:destination="@id/searchStartFragment" />
+        <action
+            android:id="@+id/action_searchMainFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_searchMainFragment_to_webFragment"
+            app:destination="@id/webFragment" />
+        <action
+            android:id="@+id/action_searchMainFragment_to_videoFragment"
+            app:destination="@id/videoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.vylo.main.profilefragment.presentation.fragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/toFollowFragment"
+            app:destination="@id/followFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.vylo.main.videofragment.presentation.fragment.VideoFragment"
+        android:label="VideoFragment"
+        tools:layout="@layout/fragment_video">
+        <action
+            android:id="@+id/action_videoFragment_to_navigationFragment"
+            app:destination="@id/navigationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/webFragment"
+        android:name="com.vylo.main.webfragment.presentation.fragment.WebFragment"
+        android:label="fragment_web"
+        tools:layout="@layout/fragment_web" />
+    <fragment
+        android:id="@+id/navigationFragment"
+        android:name="com.vylo.main.navigation.presentation.fragment.NavigationFragment"
+        android:label="NavigationFragment"
+        tools:layout="@layout/fragment_navigation_response" >
+        <action
+            android:id="@+id/action_navigationFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/followingFragment"
+        android:name="com.vylo.main.followmain.followingfragment.presentation.fragment.FollowingFragment"
+        android:label="FollowingFragment"
+        tools:layout="@layout/fragment_following">
+        <action
+            android:id="@+id/action_followingFragment_to_followingSearchFragment"
+            app:destination="@id/followingSearchFragment" />
+        <action
+            android:id="@+id/action_followingFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_followingFragment_to_followingSearchCategoryFragment"
+            app:destination="@id/followingSearchCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/followingSearchFragment"
+        android:name="com.vylo.main.followmain.followingfragment.presentation.fragment.FollowingSearchFragment"
+        android:label="fragment_following_search"
+        tools:layout="@layout/fragment_following_search">
+        <action
+            android:id="@+id/action_followingSearchFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/followFragment"
+        android:name="com.vylo.main.followmain.followfragment.presentation.fragment.FollowFragment"
+        android:label="FollowFragment" >
+        <action
+            android:id="@+id/action_followFragment_to_followingSearchFragment"
+            app:destination="@id/followingSearchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.vylo.main.categorymain.category.presentation.fragment.CategoryFragment"
+        android:label="CategoryFragment"/>
+    <dialog
+        android:id="@+id/uploadSuccessFragment"
+        android:name="com.vylo.main.responsemain.upload.presentation.fragment.UploadSuccessFragment"
+        android:label="UploadSuccessFragment">
+        <action
+            android:id="@+id/action_uploadSuccessFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/followingSearchCategoryFragment"
+        android:name="com.vylo.main.followmain.followingfragment.presentation.fragment.FollowingSearchCategoryFragment"
+        android:label="fragment_following_search_category"
+        tools:layout="@layout/fragment_following_search_category" />
+</navigation>

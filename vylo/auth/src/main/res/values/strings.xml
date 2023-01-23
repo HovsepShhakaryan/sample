@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ExtraTranslation">
+    <string name="title_activity_auth">AuthActivity</string>
+    <string name="label_login">Log in with email address</string>
+    <string name="label_email_address">Email Address</string>
+    <string name="label_password">Password</string>
+    <string name="label_log_in_button">Log In</string>
+    <string name="label_forgot_pass">Forgot your password?</string>
+    <string name="label_new_to_column">New to Column? Sign up here</string>
+    <string name="label_something_went_wrong">Something went wrong</string>
+    <string name="label_detail">detail</string>
+    <string name="label_success_sign_in">You are successfully signed in</string>
+    <string name="label_email_hint">example@gmail.com</string>
+    <string name="label_welcome">Join the conversation. Welcome to Vylo.</string>
+    <string name="label_already_user">Log in with Email</string>
+    <string name="label_log_in">Log in</string>
+    <string name="label_continue_with_email">Continue with Email</string>
+    <string name="label_continue_with_facebook">Continue with Facebook</string>
+    <string name="label_continue_with_google">Continue with Google</string>
+    <string name="label_no_data">No data is available</string>
+    <string name="label_google">google-plus</string>
+    <string name="label_facebook">facebook</string>
+    <string name="label_social_error">Something went wrong.</string>
+    <string name="label_cancel">Canceled.</string>
+    <string name="label_user_already_exist">User already signed up</string>
+
+    <!--    Facebook-->
+    <string name="facebook_app_id">1065739160746646</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">90c1dbc0455a431a66edde4848447014</string>
+<!--    <string name="facebook_client_token">AeCZs2i3SzeWRPjCIKj5-j1L3Y0</string>-->
+
+</resources>

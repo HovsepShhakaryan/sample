@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/margin_padding_size_medium_small">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/gender_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text"
+        android:paddingVertical="@dimen/margin_padding_size_small"
+        android:paddingStart="@dimen/margin_padding_size_medium_small"
+        android:background="@drawable/shape_input_rect_type"
+        android:textSize="@dimen/text_size_medium"
+        android:fontFamily="@font/suisse_lntl_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/action_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="invisible"
+        android:src="@drawable/ic_check_mark"
+        android:layout_marginEnd="@dimen/margin_padding_size_small"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

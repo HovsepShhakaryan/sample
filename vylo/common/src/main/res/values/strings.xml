@@ -1,0 +1,82 @@
+<resources>
+    <string name="label_no_connection">No internet connection</string>
+    <string name="label_invalid_field">Field is invalid</string>
+    <string name="label_file_field">File field</string>
+    <string name="label_pass_not_matched">Passwords not matched</string>
+    <string name="label_return_start_screen">Start screen</string>
+    <string name="label_change_base_url">Base url</string>
+    <string name="respond">Respond</string>
+    <string name="no_responses">No Responses</string>
+    <string name="responses_with_counter">Responses (%1$d)</string>
+    <string name="label_base_url">Base url change</string>
+    <string name="label_change_base_url_other">Base url other</string>
+    <string name="title_record_video">Record video</string>
+    <string name="title_record_audio">Record audio</string>
+    <string name="in_response_to">IN RESPONSE TO</string>
+    <string name="label_following_dot">\t &#8226;</string>
+    <string name="label_following">Following</string>
+    <string name="label_follow">Follow</string>
+    <string name="label_close">Close</string>
+    <string name="button_following">Following</string>
+    <string name="button_follow">Follow</string>
+    <string name="hint_search">Search Following</string>
+    <string name="search_cancel">Cancel</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="label_share_link">Share Link</string>
+    <string name="label_zero_time">00:00:00</string>
+    <string name="label_empty_state_following">You are not following any users yet.</string>
+    <string name="sublabel_empty_state_follow_users">Follow users in Vylo and hear and take part in conversations that matter to you.</string>
+    <string name="button_empty_state_find_users">Find Users to Follow</string>
+    <string name="label_empty_state_not_following">You are not following any publishers or users yet.</string>
+    <string name="label_empty_state_not_following_publishers_categories">You are not following any publishers or categories yet.</string>
+    <string name="label_empty_state_not_newsstand">You are not following any publishers or categories yet.</string>
+    <string name="label_empty_state_not_following_category">You are not following any categories yet.</string>
+    <string name="sublabel_empty_state_follow">Follow the publishers, categories, and friends you want to hear from.</string>
+    <string name="button_empty_state_find_publishers">Find Publishers to Follow</string>
+    <string name="button_empty_state_find_categories">Find Categories to Follow</string>
+    <string name="gender_male">male</string>
+    <string name="gender_female">female</string>
+    <string name="gender_other">other</string>
+    <string name="label_empty_state_no_posts">No posts yet.</string>
+    <string name="sublabel_empty_state_no_posts">Respond to Newsstand articles and videos to get the conversations moving.</string>
+    <string name="button_empty_state_go_to_newsstand">Go to Newsstand</string>
+    <string name="label_empty_state_no_followers">You have no followers … yet.</string>
+    <string name="sublabel_empty_share_profile">Share your profile to the world and let people into your Vylo.</string>
+    <string name="button_empty_share_profile">Share my profile</string>
+    <string name="text_counter">%1$d/%2$d</string>
+    <string name="update_required_title">Update required</string>
+    <string name="update_time_title">Time to update!</string>
+    <string name="update_required_description">This installed version of Vylo is no longer supported. Please update your app.</string>
+    <string name="update_required_time_description">We\'ve added lots of new features and fixed some bugs to make your Vylo experience as great as possible.</string>
+    <string name="label_go_to_store">Go to App Store</string>
+    <string name="label_not_now">Not now</string>
+    <string name="label_update">Update</string>
+
+    <string name="label_insightful">I find this insightful</string>
+    <string name="label_share">Share</string>
+    <string name="label_copy_link">Copy link</string>
+    <string name="label_report">Report</string>
+    <string name="title_column_report">Report</string>
+
+    <string name="title_insightful">Things I Found Insightful</string>
+    <string name="hamburger_my_contacts">My Contacts</string>
+    <string name="hamburger_settings_and_privacy">Settings and privacy</string>
+
+    <string name="title_user_report">Help us keep Vylo a safe and awesome place. What issue with this user are you reporting?</string>
+
+    <string name="copy_profile_url">Copy profile URL</string>
+    <string name="share_this_profile">Share this profile</string>
+    <string name="block_user">Block User</string>
+    <string name="report_user">Report User</string>
+
+    <string name="label_kebab_private">This post is private and waiting to be approved before it is publicly viewable</string>
+    <string name="label_kebab_edit_video">Edit</string>
+    <string name="label_kebab_share_video">Share</string>
+    <string name="label_kebab_coly_link_video">Copy link</string>
+    <string name="label_kebab_delete_video">Delete</string>
+    <string name="label_success">Success</string>
+
+    <string name="read_more">  more</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

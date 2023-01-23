@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/first_title"
+    style="@style/MainText.H5.Blue"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/margin_padding_size_large_small_mid"
+    android:paddingBottom="@dimen/margin_padding_size_medium_mid_mid" />

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.vylo.common.widget.MainNavigationBar
+        android:id="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/focus_wrapper"
+        android:layout_width="@dimen/zero"
+        android:layout_height="@dimen/zero"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/MainText.H8_1.WhiteGrey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_padding_size_medium_small_mid_small"
+        android:layout_marginTop="@dimen/margin_padding_size_small_middle"
+        android:text="@string/label_provide_personal_information" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/half_one"
+        android:layout_marginTop="@dimen/margin_padding_size_large"
+        android:background="@color/dark_grey" />
+
+    <com.vylo.common.widget.TitleDescView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_padding_size_medium_small_mid_small"
+        android:layout_marginTop="@dimen/margin_padding_size_medium"
+        app:enable="false"
+        app:desc_hint="@string/label_profile_email_hint"
+        app:desc_color="@color/white_grey_text"
+        app:desc_hint_text_size="@dimen/text_size_micro_mid"
+        app:desc_text_size="@dimen/text_size_small"
+        app:title="@string/label_profile_email" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/half_one"
+        android:layout_marginTop="@dimen/margin_padding_size_medium_small_mid_small"
+        android:background="@color/dark_grey" />
+
+    <com.vylo.common.widget.TitleDescView
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_padding_size_medium_small_mid_small"
+        android:layout_marginTop="@dimen/margin_padding_size_medium"
+        app:desc_hint="@string/label_profile_phone_hint"
+        app:desc_hint_text_size="@dimen/text_size_micro_mid"
+        app:desc_text_size="@dimen/text_size_small"
+        app:title="@string/label_profile_phone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/half_one"
+        android:layout_marginTop="@dimen/margin_padding_size_medium_small_mid_small"
+        android:background="@color/dark_grey" />
+
+    <com.vylo.common.widget.TitleDescView
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_padding_size_medium_small_mid_small"
+        android:layout_marginTop="@dimen/margin_padding_size_medium"
+        app:desc_hint="@string/label_profile_gender_hint"
+        app:desc_hint_text_size="@dimen/text_size_micro_mid"
+        app:desc_text_size="@dimen/text_size_small"
+        app:title="@string/label_profile_gender" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/half_one"
+        android:layout_marginTop="@dimen/margin_padding_size_medium_small_mid_small"
+        android:background="@color/dark_grey" />
+
+    <com.vylo.common.widget.TitleDescView
+        android:id="@+id/birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_padding_size_medium_small_mid_small"
+        android:layout_marginTop="@dimen/margin_padding_size_medium"
+        app:desc_hint="@string/label_profile_birthday_hint"
+        app:desc_hint_text_size="@dimen/text_size_micro_mid"
+        app:desc_text_size="@dimen/text_size_small"
+        app:title="@string/label_profile_birthday" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/half_one"
+        android:layout_marginTop="@dimen/margin_padding_size_medium_small_mid_small"
+        android:background="@color/dark_grey" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

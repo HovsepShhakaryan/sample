@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.vylo.common.widget.MainNavigationBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/MainText.H4_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_padding_size_medium_small_mid_small"
+        android:layout_marginTop="@dimen/margin_padding_size_xlarge_mid_small"
+        android:text="@string/from_vylo" />
+
+    <com.vylo.common.widget.DrawableTextView
+        android:id="@+id/updates_text"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/margin_padding_size_medium_small_mid_small"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding_size_small_middle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/MainText.H8_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_padding_size_medium_small_mid_small"
+        android:layout_marginTop="@dimen/margin_padding_size_large_small_mid"
+        android:text="@string/get_emails_for_vylo_experience" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/half_one"
+        android:layout_marginTop="@dimen/margin_padding_size_large_mid_mid"
+        android:background="@color/shadow" />
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/list"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:paddingTop="@dimen/margin_padding_size_xxlarge_mid_mid"-->
+    <!--        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+    <!--        tools:listitem="@layout/item_drawable_text" />-->
+
+</androidx.appcompat.widget.LinearLayoutCompat>

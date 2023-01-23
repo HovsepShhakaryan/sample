@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:background="@color/main">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/first_title"
+        style="@style/MainText.H6_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/margin_padding_size_xlarge_small_mid"
+        android:layout_marginHorizontal="@dimen/margin_padding_size_xlarge_pre_mid"
+        android:paddingBottom="@dimen/margin_padding_size_medium" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/option_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_profile_kebab_option" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/close"
+        style="@style/MainText.H6_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/container_72"
+        android:background="@color/black"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/margin_padding_size_large_pre_small"
+        tools:text="Close" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

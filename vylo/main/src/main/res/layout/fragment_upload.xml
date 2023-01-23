@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_edit_cover"
+    android:orientation="vertical">
+
+    <com.vylo.common.widget.MainNavigationBar
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/focus_wrapper"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_pick"
+            android:layout_width="70dp"
+            android:layout_height="22dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/shape_edit_cover"
+            android:fontFamily="@font/suisse_lntl_regular"
+            android:text="Edit cover"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/thumbnail"
+            app:layout_constraintEnd_toEndOf="@+id/thumbnail"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_head"
+        style="@style/MainText.H5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_padding_size_large_pre_small_mid"
+        android:layout_marginTop="@dimen/margin_padding_size_large_pre_mid"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/suisse_lntl_semi_bold"
+        android:paddingBottom="@dimen/margin_padding_size_small_mid"
+        android:text="@string/label_title_description" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/title_body"
+        style="@style/MainEditText.InputField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_padding_size_large_pre_small_mid"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/suisse_lntl_regular"
+        android:hint="@string/label_write_caption"
+        android:minHeight="32dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/desc_head"
+        style="@style/MainText.H5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_padding_size_large_pre_small_mid"
+        android:layout_marginTop="@dimen/margin_padding_size_medium_mid_mid_half"
+        android:fontFamily="@font/suisse_lntl_semi_bold"
+        android:paddingBottom="@dimen/margin_padding_size_small_mid"
+        android:text="@string/label_description" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/desc_body"
+        style="@style/MainText.H8_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_padding_size_large_pre_small_mid"
+        android:fontFamily="@font/suisse_lntl_regular"
+        android:text="@string/label_description_body" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/response_to_head"
+        style="@style/MainText.H5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_padding_size_large_pre_small_mid"
+        android:layout_marginTop="@dimen/margin_padding_size_large_pre_mid"
+        android:fontFamily="@font/suisse_lntl_semi_bold"
+        android:paddingBottom="@dimen/margin_padding_size_small_mid"
+        android:text="@string/label_response_to"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/response_to_body"
+        style="@style/MainText.H8_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_padding_size_large_pre_small_mid"
+        android:ellipsize="end"
+        android:fontFamily="@font/suisse_lntl_regular"
+        android:lines="1"
+        android:visibility="gone"
+        tools:text="The Best Morning Routine" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.vylo.common.widget.MainButton
+            android:id="@+id/btn_publish"
+            android:layout_width="@dimen/rounded_corner_button_big_width"
+            android:layout_height="@dimen/rounded_corner_button_big_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ProgressBar
+            android:id="@+id/progress_upload"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:progress="0"
+            android:progressBackgroundTint="#CAC4C4"
+            android:progressTint="#0E7AFE"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/btn_publish"
+            app:layout_constraintEnd_toEndOf="@+id/btn_publish"
+            app:layout_constraintStart_toStartOf="@+id/btn_publish" />
+
+        <TextView
+            android:id="@+id/lbl_uploading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/suisse_lntl_regular"
+            android:text="Uploading..."
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/progress_upload"
+            app:layout_constraintStart_toStartOf="@+id/progress_upload" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

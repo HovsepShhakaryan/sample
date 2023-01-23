@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reset_pass_navigation_graph"
+    app:startDestination="@id/forgotPassEmailFragment">
+
+    <fragment
+        android:id="@+id/forgotPassEmailFragment"
+        android:name="com.vylo.resetpassword.forgotpassemail.presentation.fragment.ForgotPassEmailFragment"
+        android:label="fragment_forgot_pass_email"
+        tools:layout="@layout/fragment_forgot_pass_email" >
+        <action
+            android:id="@+id/action_forgotPassEmailFragment_to_forgotPassCodeFragment"
+            app:destination="@id/forgotPassCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPassCodeFragment"
+        android:name="com.vylo.resetpassword.forgotpasscode.presentation.fragment.ForgotPassCodeFragment"
+        android:label="fragment_forgot_pass_code"
+        tools:layout="@layout/fragment_forgot_pass_code" />
+</navigation>

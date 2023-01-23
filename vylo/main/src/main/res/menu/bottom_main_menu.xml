@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/vylo_main_graph"
+        android:title="@string/label_following_vylo"
+        android:enabled="true"
+        android:icon="@drawable/ic_icon_home" />
+    <item
+        android:id="@+id/news_stand_main_graph"
+        android:title="@string/label_newsstand"
+        android:icon="@drawable/ic_icon_newsstand_new"/>
+    <item
+        android:id="@+id/camera"
+        android:title="@string/label_create"
+        android:icon="@drawable/ic_icon_create_new"/>
+    <item
+        android:id="@+id/category_main_graph"
+        android:title="@string/label_trending"
+        android:icon="@drawable/ic_icon_trending_new"/>
+    <item
+        android:id="@+id/profile_main_graph"
+        android:title="@string/label_profile"
+        android:icon="@drawable/ic_icon_profile"/>
+</menu>

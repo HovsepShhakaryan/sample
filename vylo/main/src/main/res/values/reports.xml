@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ReportItems">
+        <item>This is off topic</item>
+        <item>This infringes on intellectual property rights</item>
+        <item>Hate speech or symbols</item>
+        <item>Nudity or sexual activity</item>
+        <item>This is spam or fraud</item>
+        <item>Something else</item>
+    </string-array>
+
+    <string-array name="ReportUser">
+        <item>This is off topic</item>
+        <item>This infringes on intellectual property rights</item>
+        <item>Hate speech or symbols</item>
+        <item>Nudity or sexual activity</item>
+        <item>This is spam or fraud</item>
+        <item>Something else</item>
+        <item>Report User</item>
+        <item>Block User</item>
+    </string-array>
+</resources>

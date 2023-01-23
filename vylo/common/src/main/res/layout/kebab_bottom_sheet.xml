@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/margin_padding_size_small_large"
+    android:paddingBottom="@dimen/margin_padding_size_xlarge_small"
+    tools:background="@color/main">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/drag_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding_size_medium_mid"
+        android:src="@drawable/ic_line_bottom_sheet" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/first_title"
+        style="@style/MainText.H7_1.Bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/margin_padding_size_large_pre_mid"
+        android:layout_marginTop="@dimen/margin_padding_size_medium_small_mid"
+        android:gravity="center"
+        tools:text="Help us keep Column a safe and awesome place." />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="@color/kebab_grey"
+        app:cardCornerRadius="@dimen/margin_padding_size_small_large"
+        android:layout_marginTop="@dimen/margin_padding_size_medium"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/option_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/margin_padding_size_medium_small"
+            android:paddingTop="@dimen/margin_padding_size_large"
+            tools:listitem="@layout/item_kebab_option" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

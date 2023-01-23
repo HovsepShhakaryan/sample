@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.vylo.common.widget.MainNavigationBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_to_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/nestedScrolling"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:context=".profilefragment.presentation.fragment.ProfileFragment">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_img"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:visibility="gone"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_user"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:scaleType="centerCrop" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/hamburger"
+                    android:layout_width="@dimen/rounded_corner_button_medium_height"
+                    android:layout_height="@dimen/rounded_corner_button_medium_height"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_hamburger"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@id/card_img"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/card_img" />
+
+                <com.vylo.common.widget.MainButton
+                    android:id="@+id/button_following"
+                    android:layout_width="@dimen/rounded_corner_button_small_width"
+                    android:layout_height="@dimen/rounded_corner_button_medium_height"
+                    android:layout_marginEnd="12dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@id/hamburger"
+                    app:layout_constraintEnd_toStartOf="@+id/hamburger"
+                    app:layout_constraintTop_toTopOf="@id/hamburger" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/activity"
+                    android:layout_width="@dimen/rounded_corner_button_medium_height"
+                    android:layout_height="@dimen/rounded_corner_button_medium_height"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_activity"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@id/card_img"
+                    app:layout_constraintEnd_toStartOf="@+id/hamburger"
+                    app:layout_constraintTop_toTopOf="@id/card_img" />
+
+                <com.vylo.common.widget.MainButton
+                    android:id="@+id/edit_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="12dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@id/hamburger"
+                    app:layout_constraintEnd_toStartOf="@+id/activity"
+                    app:layout_constraintTop_toTopOf="@id/hamburger" />
+
+                <LinearLayout
+                    android:id="@+id/user_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/card_img">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/user_name"
+                        style="@style/Profile_full_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/suisse_lntl_semi_bold" />
+
+                    <com.vylo.common.widget.ReadMoreTextView
+                        android:id="@+id/user_bio"
+                        style="@style/Profile_bio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-8dp"
+                        android:fontFamily="@font/suisse_lntl_regular"
+                        app:readMoreMaxLine="4"
+                        app:readMoreText="  more"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/user_link"
+                        style="@style/Profile_url"
+                        android:layout_marginTop="-5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/suisse_lntl_regular" />
+
+                </LinearLayout>
+
+                <com.vylo.common.widget.InfoView
+                    android:id="@+id/user_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/user_info" />
+
+                <com.vylo.common.widget.InfoView
+                    android:id="@+id/user_followers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginStart="30dp"
+                    app:layout_constraintStart_toEndOf="@+id/user_post"
+                    app:layout_constraintTop_toBottomOf="@+id/user_info" />
+
+                <com.vylo.common.widget.InfoView
+                    android:id="@+id/user_following"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginStart="30dp"
+                    app:layout_constraintStart_toEndOf="@+id/user_followers"
+                    app:layout_constraintTop_toBottomOf="@+id/user_info" />
+
+                <com.vylo.common.widget.EmptyStateView
+                    android:id="@+id/empty_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_padding_size_medium_mid_mid_half"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/user_post" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_feed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="30dp"
+                    app:layout_constraintTop_toBottomOf="@id/user_post"
+                    tools:listitem="@layout/item_feed_report" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

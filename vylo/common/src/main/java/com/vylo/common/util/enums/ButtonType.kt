@@ -1,0 +1,12 @@
+package com.vylo.common.util.enums
+
+enum class ButtonType {
+    BUTTON_MAIN,
+    BUTTON_ROUND,
+    BUTTON_WHITE_ROUND,
+    BUTTON_WITHOUT_BORDER_ROUND,
+    BUTTON_ROUND_CORNER,
+    BUTTON_GRAY_ROUND,
+    BUTTON_SQUARE_DARK,
+    BUTTON_SQUARE_LIGHT,
+}

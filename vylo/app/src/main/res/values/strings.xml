@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Vylo</string>
+    <string name="label_no_connection">No internet connection</string>
+    <string name="label_return_start_screen">Start screen</string>
+    <string name="label_change_base_url">Base url</string>
+    <string name="label_base_url">Base url change</string>
+    <string name="label_change_base_url_other">Base url other</string>
+    <string name="default_notification_channel_id">notification_chanel</string>
+    <string name="publisher_profile_deep_link">https://app.vylo.com/profile</string>
+    <string name="user_feed_deep_link">https://app.vylo.com/feed</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

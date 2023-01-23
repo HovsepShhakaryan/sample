@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_padding_size_medium_small"
+    android:layout_marginEnd="@dimen/margin_padding_size_medium_small">
+
+    <LinearLayout
+        android:id="@+id/container_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/In_responseto_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rounded_top_corner"
+            android:paddingHorizontal="@dimen/margin_padding_size_medium"
+            android:paddingVertical="@dimen/margin_padding_size_small"
+            android:text="@string/in_response_to" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_new_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/shape_rounded_bottom_corner"
+            android:minHeight="@dimen/container_100">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="140dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title_of_news"
+                style="@style/MainText.H8_3_response"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_padding_size_medium"
+                android:layout_marginTop="@dimen/margin_padding_size_small"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_news_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_padding_size_medium"
+                android:layout_marginTop="@dimen/margin_padding_size_small"
+                android:layout_marginBottom="@dimen/margin_padding_size_medium_small"
+                app:cardCornerRadius="@dimen/margin_padding_size_extra_small_mid"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_of_news">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/image_of_news_company"
+                    android:layout_width="@dimen/margin_padding_size_medium_mid"
+                    android:layout_height="@dimen/margin_padding_size_medium_mid"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/portrait_placeholder" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/label_news_name"
+                style="@style/MainText.H9_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_padding_size_small"
+                app:layout_constraintBottom_toBottomOf="@+id/card_news_company"
+                app:layout_constraintStart_toEndOf="@+id/card_news_company"
+                app:layout_constraintTop_toTopOf="@+id/card_news_company" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|end"
+        android:layout_marginTop="@dimen/margin_padding_size_small"
+        android:layout_marginEnd="@dimen/margin_padding_size_medium"
+        android:layout_marginBottom="@dimen/margin_padding_size_small"
+        app:cardCornerRadius="@dimen/margin_padding_size_small_large">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_reported_news"
+            android:layout_width="@dimen/container_120"
+            android:layout_height="@dimen/container_100"
+            android:scaleType="centerCrop"
+            android:src="@drawable/unnamed" />
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

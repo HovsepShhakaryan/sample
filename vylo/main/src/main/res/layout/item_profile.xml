@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    tools:background="@color/main"
+    android:layout_marginBottom="@dimen/margin_padding_size_medium_small_mid">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/container_of_reporter_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginEnd="@dimen/margin_padding_size_medium_small"
+        app:cardCornerRadius="@dimen/margin_padding_size_small">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_of_reporter"
+            android:layout_width="@dimen/margin_padding_size_pre_xxlarge"
+            android:layout_height="@dimen/margin_padding_size_pre_xxlarge"
+            android:scaleType="centerCrop"
+            android:src="@drawable/portrait_placeholder" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/label_name"
+            style="@style/MainText.H7_1"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            tools:text="Thomas Carter III"
+            android:fontFamily="@font/suisse_lntl_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/label_subname"
+            style="@style/MainText.H8.Grey"
+            android:includeFontPadding="false"
+            android:layout_marginTop="2dp"
+            tools:text="\@tom_carter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_weight="1" />
+
+    <com.vylo.common.widget.MainButton
+        android:id="@+id/button_following"
+        android:layout_width="@dimen/square_rounded_corner_button_medium_width"
+        android:layout_height="@dimen/square_rounded_corner_button_medium_height"
+        android:layout_gravity="center_vertical|end"
+        android:gravity="center" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

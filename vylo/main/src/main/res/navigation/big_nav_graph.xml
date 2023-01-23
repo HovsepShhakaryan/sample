@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/big_nav_graph"
+    app:startDestination="@+id/vylo_main_graph">
+
+    <include app:graph="@navigation/vylo_main_graph"/>
+    <include app:graph="@navigation/news_stand_main_graph"/>
+    <include app:graph="@navigation/camera_main_graph"/>
+    <include app:graph="@navigation/tranding_main_graph"/>
+    <include app:graph="@navigation/profile_main_graph"/>
+
+</navigation>

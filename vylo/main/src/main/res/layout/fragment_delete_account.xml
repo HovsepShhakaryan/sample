@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.vylo.common.widget.MainNavigationBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/delete_account_title"
+        style="@style/MainText.H7_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_padding_size_medium_small_mid_small"
+        android:layout_marginTop="@dimen/margin_padding_size_xxlarge_mid"
+        android:layout_marginEnd="@dimen/margin_padding_size_large_small_mid"
+        android:text="@string/title_delete_account"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/delete_account_subtitle"
+        style="@style/MainText.H8_9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_padding_size_medium_small_mid_small"
+        android:layout_marginTop="@dimen/margin_padding_size_medium_mid_small_small"
+        android:layout_marginEnd="@dimen/margin_padding_size_large_small_mid"
+        android:text="@string/subtitle_delete_account"
+        app:layout_constraintTop_toBottomOf="@+id/delete_account_title" />
+
+    <View
+        android:id="@+id/delimiter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/half_one"
+        android:layout_marginTop="@dimen/margin_padding_size_large_mid"
+        android:background="@color/dark_grey"
+        app:layout_constraintTop_toBottomOf="@+id/delete_account_subtitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/deleting_account_title"
+        style="@style/MainText.H7_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_padding_size_medium_small_mid_small"
+        android:layout_marginTop="@dimen/margin_padding_size_large_small"
+        android:layout_marginEnd="@dimen/margin_padding_size_large_small_mid"
+        android:text="@string/title_deleting_account"
+        app:layout_constraintTop_toBottomOf="@+id/delimiter" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/deleting_account_subtitle"
+        style="@style/MainText.H8_9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_padding_size_medium_small_mid_small"
+        android:layout_marginTop="@dimen/margin_padding_size_medium_small_mid"
+        android:layout_marginEnd="@dimen/margin_padding_size_large_small_mid"
+        android:text="@string/subtitle_deleting_account"
+        app:layout_constraintTop_toBottomOf="@+id/deleting_account_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/delete_account"
+        style="@style/MainText.H8_3.Red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_padding_size_medium_small_mid_small"
+        android:layout_marginEnd="@dimen/margin_padding_size_large_small_mid"
+        android:layout_marginBottom="@dimen/container_80"
+        android:text="@string/delete_account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

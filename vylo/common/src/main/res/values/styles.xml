@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    Text-->
+    <style name="MainText">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:fontFamily">@font/suisse_lntl_medium</item>
+    </style>
+
+    <style name="MainText.H2">
+        <item name="android:textSize">@dimen/text_size_large_medium</item>
+        <item name="lineHeight">@dimen/margin_padding_size_large_mid</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+        <item name="android:lineSpacingMultiplier">0</item>
+        <item name="android:lineSpacingExtra">24sp</item>
+        android:lineSpacingExtra="24sp"
+    </style>
+
+    <style name="MainText.H2.Aquamarine">
+        <item name="android:textSize">@dimen/text_size_large_medium_small</item>
+        <item name="lineHeight">@dimen/margin_padding_size_xlarge_small</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+        <item name="android:textColor">@color/secondary</item>
+    </style>
+
+    <style name="MainText.H2_lines_padding">
+        <item name="android:textSize">@dimen/text_size_large_medium</item>
+        <item name="lineHeight">@dimen/margin_padding_size_xlarge_mid</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+    </style>
+
+    <style name="MainText.H2_1">
+        <item name="android:textSize">@dimen/text_size_large_pre_medium</item>
+        <item name="lineHeight">@dimen/margin_padding_size_large_pre_small_mid</item>
+        <item name="android:fontFamily">@font/suisse_lntl_regular</item>
+    </style>
+
+    <style name="MainText.H3">
+        <item name="android:textSize">@dimen/text_size_large_small_medium</item>
+        <item name="lineHeight">@dimen/margin_padding_size_large_pre_small_mid</item>
+        <item name="android:fontFamily">@font/suisse_lntl_medium</item>
+    </style>
+
+    <style name="MainText.H3_1">
+        <item name="android:textSize">@dimen/text_size_medium_mid</item>
+        <item name="lineHeight">@dimen/margin_padding_size_large_pre_small</item>
+    </style>
+
+    <style name="MainText.H3_1_empty">
+        <item name="android:textSize">@dimen/text_size_medium_mid</item>
+        <item name="lineHeight">@dimen/margin_padding_size_large_mid</item>
+    </style>
+
+    <style name="MainText.H3_2">
+        <item name="android:textSize">@dimen/text_size_large_small_medium</item>
+        <item name="lineHeight">@dimen/margin_padding_size_large_pre_small_mid</item>
+        <item name="android:fontFamily">@font/suisse_lntl_regular</item>
+    </style>
+
+    <style name="MainText.H4">
+        <item name="android:textSize">@dimen/text_size_medium_pre_mid</item>
+        <item name="lineHeight">@dimen/margin_padding_size_large_pre_small</item>
+    </style>
+
+    <style name="MainText.H4_1">
+        <item name="android:textSize">@dimen/text_size_medium_pre_mid</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_mid</item>
+    </style>
+
+    <style name="MainText.H4_1.White">
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <!--    font-family: 'Suisse Intl'; font-style: normal; font-weight: 400;-->
+    <style name="MainText.H5">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_mid_small</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+    </style>
+
+    <style name="MainText.H5.Grey">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_mid_small</item>
+        <item name="android:textColor">@color/white_grey_text</item>
+    </style>
+
+    <style name="MainText.H5.Blue">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_mid_small</item>
+        <item name="android:textColor">@color/secondary</item>
+    </style>
+
+    <style name="MainText.H2.Blue">
+        <item name="android:textSize">@dimen/text_size_large_medium</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_mid_small</item>
+        <item name="android:textColor">@color/secondary</item>
+    </style>
+
+    <style name="MainText.H5.White">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_mid_small</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <style name="MainText.H5.1">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_small_mid_small</item>
+    </style>
+
+    <style name="MainText.H5.Aquamarine">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_small_mid_small</item>
+        <item name="android:textColor">@color/secondary</item>
+    </style>
+
+    <style name="MainText.H5.Aquamarine.Regular">
+        <item name="lineHeight">@dimen/margin_padding_size_medium_mid_small</item>
+        <item name="android:fontFamily">@font/suisse_lntl_regular</item>
+    </style>
+
+    <style name="MainText.H6">
+        <item name="android:textSize">@dimen/text_size_small_mid</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_mid_mid</item>
+    </style>
+
+    <style name="MainText.H6_1">
+        <item name="android:textSize">@dimen/text_size_small_mid</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_mid_mid_half</item>
+    </style>
+
+    <style name="MainText.H6_1_1">
+        <item name="android:textSize">@dimen/text_size_small_mid</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_mid_mid_half</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+    </style>
+
+    <style name="MainText.H6_2">
+        <item name="android:textSize">@dimen/text_size_small_mid</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_mid_mid_half</item>
+        <item name="android:textColor">@color/white_light_gray</item>
+    </style>
+
+    <style name="MainText.H6_3">
+        <item name="android:textSize">@dimen/text_size_small_mid</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium</item>
+    </style>
+
+    <style name="MainText.H6_3.Bold">
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+    </style>
+
+    <style name="MainText.H6_3.BlackGrey">
+        <item name="android:textColor">@color/black_grey_text</item>
+    </style>
+
+    <style name="MainText.H6_4">
+        <item name="android:textSize">@dimen/text_size_small_mid</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/suisse_lntl_regular</item>
+    </style>
+
+    <style name="MainText.H7">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_mid_mid</item>
+    </style>
+
+    <style name="MainText.H7_1">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium</item>
+    </style>
+
+    <style name="MainText.H7_1.Black">
+        <item name="android:textColor">@color/main</item>
+    </style>
+
+    <style name="MainText.H7_1.Bold">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="lineHeight">@dimen/margin_padding_size_large_small</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="MainText.H7_1.Grey">
+        <item name="android:textColor">@color/white_grey_text</item>
+    </style>
+
+    <style name="MainText.H7_1.Grey.Regular">
+        <item name="android:fontFamily">@font/suisse_lntl_regular</item>
+    </style>
+
+    <style name="MainText.H7_2.Grey">
+        <item name="android:textSize">@dimen/text_size_micro_mid</item>
+        <item name="android:textColor">@color/white_grey_text</item>
+    </style>
+
+    <style name="MainText.H7_1.Blue">
+        <item name="android:textColor">@color/secondary</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+    </style>
+
+    <style name="MainText.H7_2">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_small_mid_small</item>
+    </style>
+
+    <style name="MainText.H7_2.Bold">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_small_mid_small</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+    </style>
+
+    <style name="MainText.H7_2.BlackGrey">
+        <item name="android:textColor">@color/black_grey_text</item>
+    </style>
+
+    <style name="MainText.H7_3">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_mid_mid_half</item>
+    </style>
+
+    <style name="MainText.H8">
+        <item name="android:fontFamily">@font/helvetica_neue_bold</item>
+        <item name="android:textSize">@dimen/text_size_micro_mid</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium</item>
+    </style>
+
+    <style name="MainText.H8.Grey">
+        <item name="android:textSize">@dimen/text_size_micro_mid</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium</item>
+        <item name="android:textColor">@color/light_grey_text</item>
+        <item name="android:fontFamily">@font/suisse_lntl_regular</item>
+    </style>
+
+    <style name="MainText.H8_1">
+        <item name="android:textSize">@dimen/text_size_micro</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_small_mid</item>
+    </style>
+
+    <style name="MainText.H8_1.Dark">
+        <item name="android:textColor">@color/main</item>
+    </style>
+
+    <style name="MainText.H8_1.Blue">
+        <item name="android:textColor">@color/secondary</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+    </style>
+
+    <style name="MainText.H8_1.Grey">
+        <item name="android:textColor">@color/black_grey_text</item>
+    </style>
+
+    <style name="MainText.H8_1.WhiteGrey">
+        <item name="android:textColor">@color/white_grey_text</item>
+    </style>
+
+    <style name="MainText.H8_2">
+        <item name="android:textSize">@dimen/text_size_micro</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_small_mid</item>
+        <item name="android:textColor">@color/light_grey_text</item>
+    </style>
+
+    <style name="MainText.H8_2.White">
+        <item name="android:textSize">@dimen/text_size_micro</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_small_mid</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="MainText.H8_3">
+        <item name="android:textSize">@dimen/text_size_micro_mid</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_small_mid_small</item>
+    </style>
+
+    <style name="MainText.H8_3_response">
+        <item name="android:textSize">@dimen/text_size_micro_mid</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_small_mid_small</item>
+        <item name="android:fontFamily">@font/suisse_lntl_bold</item>
+    </style>
+
+    <style name="MainText.H8_3.Red">
+        <item name="android:textSize">@dimen/text_size_micro_mid</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_small_mid_small</item>
+        <item name="android:textColor">@color/red_text</item>
+    </style>
+
+    <style name="MainText.H8_3.Regular">
+        <item name="android:textColor">@color/white_grey</item>
+        <item name="android:fontFamily">@font/suisse_lntl_regular</item>
+    </style>
+
+    <style name="MainText.H8_3.Grey">
+        <item name="android:textColor">@color/white_grey_text</item>
+    </style>
+
+    <style name="MainText.H8.B">
+        <item name="fontFamily">@font/helvetica_neue_bold</item>
+        <item name="android:textSize">@dimen/text_size_micro</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_small_mid_small</item>
+        <item name="android:textColor">@color/white_gray_ultra_light</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+    </style>
+
+    <style name="MainText.H8_4">
+        <item name="android:textSize">@dimen/text_size_micro</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium</item>
+        <item name="android:textColor">@color/main</item>
+    </style>
+
+    <style name="MainText.H8_5">
+        <item name="android:textSize">@dimen/text_size_micro</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_small_mid</item>
+        <item name="android:textColor">@color/ultra_light_grey_text</item>
+    </style>
+
+    <style name="MainText.H8_5.Black">
+        <item name="android:textSize">@dimen/text_size_micro</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_small_mid</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MainText.H8_6">
+        <item name="android:textSize">@dimen/text_size_micro</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_mid_mid</item>
+        <item name="android:textColor">@color/secondary</item>
+    </style>
+
+    <style name="MainText.H8_link">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_mid_mid</item>
+        <item name="android:textColor">@color/secondary</item>
+    </style>
+
+    <style name="MainText.H8_7">
+        <item name="android:textSize">@dimen/text_size_micro</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_small_mid_small</item>
+    </style>
+
+    <style name="MainText.H8_8">
+        <item name="android:textSize">@dimen/text_size_micro</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_mid_mid</item>
+        <item name="android:textColor">@color/light_white_grey_text</item>
+    </style>
+
+    <style name="MainText.H8_8_empty">
+        <item name="android:textSize">@dimen/text_size_micro</item>
+        <item name="lineHeight">@dimen/margin_padding_size_large_small</item>
+        <item name="android:textColor">@color/light_white_grey_text</item>
+    </style>
+
+    <style name="MainText.H8_9">
+        <item name="android:textSize">@dimen/text_size_micro</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_mid_mid_half</item>
+        <item name="android:textColor">@color/white_grey_text</item>
+    </style>
+
+    <style name="MainText.H9">
+        <item name="android:textSize">@dimen/text_size_extra_micro_mid</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_small_mid_small</item>
+    </style>
+
+    <style name="MainText.H9.White">
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <style name="MainText.H9.Black">
+        <item name="android:textColor">@color/main</item>
+    </style>
+
+    <style name="MainText.H9_1">
+        <item name="android:textSize">@dimen/text_size_extra_micro_mid_half</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_small_small_mid</item>
+        <item name="android:textColor">@color/grey_text</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+    </style>
+
+    <style name="MainText.H10">
+        <item name="android:textSize">@dimen/text_size_nano</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_mid_small_small</item>
+        <item name="android:textColor">@color/player_bar</item>
+    </style>
+
+    <style name="MainText.H10_1">
+        <item name="android:textSize">@dimen/text_size_extra_micro_mid</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_mid_small_small</item>
+        <item name="android:textColor">@color/player_bar</item>
+    </style>
+
+    <style name="MainText.H11">
+        <item name="fontFamily">@font/gt_america_bold</item>
+        <item name="android:textSize">@dimen/text_size_nano_small</item>
+        <item name="lineHeight">@dimen/margin_padding_size_small_large</item>
+        <item name="android:fontFamily">@font/gt_america_expanded_bold</item>
+    </style>
+
+    <style name="MainText.H11_2">
+        <item name="android:textSize">@dimen/text_size_nano_small</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_small_small_mid</item>
+    </style>
+
+
+    <!--    SeekBar-->
+    <style name="VolumeSeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressBackgroundTint">@color/white</item>
+        <item name="android:progressTint">@color/white</item>
+    </style>
+
+
+    <!--    Bottom Sheet-->
+    <style name="KebabHamburgerBottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="bottomSheetStyle">@style/HamburgerBottomSheet</item>
+    </style>
+
+    <style name="KebabBottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="bottomSheetStyle">@style/BottomSheet</item>
+    </style>
+
+    <style name="BottomSheet" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_bottom_sheet</item>
+    </style>
+
+    <style name="HamburgerBottomSheet" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_hamburger_bottom_sheet</item>
+    </style>
+
+    <!--    TabLayout-->
+    <style name="MainTabLayout" parent="android:Widget">
+        <item name="tabIndicatorColor">@color/primary</item>
+        <item name="tabIndicatorHeight">@dimen/margin_padding_size_extra_small</item>
+        <item name="tabMaxWidth">@dimen/container_142</item>
+        <item name="tabMinWidth">@dimen/container_142</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabBackground">@color/main</item>
+        <item name="tabTextAppearance">@style/MainText.H7_1</item>
+        <item name="tabSelectedTextColor">@color/primary</item>
+        <item name="tabTextColor">@color/white_grey_text</item>
+    </style>
+
+    <style name="MainFullTabLayout" parent="android:Widget">
+        <item name="tabIndicatorColor">@color/primary</item>
+        <item name="tabIndicatorHeight">@dimen/margin_padding_size_extra_small</item>
+        <item name="tabBackground">@color/main</item>
+        <item name="tabTextAppearance">@style/MainText.H7_1</item>
+        <item name="tabSelectedTextColor">@color/primary</item>
+        <item name="tabTextColor">@color/white_grey_text</item>
+    </style>
+
+    <!--    Button-->
+    <style name="MainButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textAppearance">@style/MainText.H8_1</item>
+    </style>
+
+    <style name="MainButton.WhiteBorderTransparent">
+        <item name="background">@drawable/shape_white_border</item>
+    </style>
+
+    <style name="MainButton.UnborderBlue">
+        <item name="background">@drawable/shape_white_without_border</item>
+    </style>
+
+
+    <!--    EditText-->
+    <style name="MainEditText">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_small_mid_small</item>
+    </style>
+    <style name="MainEditText.MainSearch">
+        <item name="android:textColor">@color/black_light_grey_text</item>
+        <item name="android:textColorHint">@color/black_light_grey_text</item>
+        <item name="android:textCursorDrawable">@drawable/shape_input_white_cursor</item>
+    </style>
+
+    <style name="MainEditText.InputField">
+        <item name="android:textSize">@dimen/text_size_micro</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_small_mid</item>
+        <item name="android:textColor">@color/ultra_light_grey_text</item>
+        <item name="android:textColorHint">@color/ultra_light_grey_text</item>
+        <item name="maxLines">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:textCursorDrawable">@drawable/shape_input_white_cursor</item>
+    </style>
+
+    <style name="MainEditText.DescField">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textColorHint">@color/white_grey_text</item>
+        <item name="android:background">@null</item>
+        <item name="android:textCursorDrawable">@drawable/shape_input_white_cursor</item>
+    </style>
+
+
+    <!--    SwitchCompat-->
+    <style name="MainSwitchCompat" parent="Theme.AppCompat">
+        <item name="colorAccent">@color/secondary</item>
+    </style>
+
+    <style name="my_dialog_theme" parent="ThemeOverlay.AppCompat.Dialog">
+        <item name="colorAccent">@color/main</item>                   <!--header background-->
+        <item name="android:windowBackground">@color/main</item>     <!--calendar background-->
+        <item name="android:colorControlActivated">@color/secondary</item> <!--selected day-->
+        <item name="android:textColorPrimary">@color/primary</item> <!--days of the month-->
+        <item name="android:textColorSecondary">@color/secondary</item>    <!--days of the week-->
+    </style>
+
+    <style name="CustomChipChoice" parent="@style/Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/background_color_chip_state_list</item>
+        <item name="android:textColor">@color/text_color_chip_state_list</item>
+        <item name="android:textSize">@dimen/text_size_small_mid</item>
+    </style>
+
+    <!--    New design-->
+    <style name="White_rounded_button_big_medium">
+        <item name="android:textSize">@dimen/rounded_corner_button_big_medium_text_size</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_mid_mid</item>
+        <item name="android:textColor">@color/main_background</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+    </style>
+
+    <style name="White_rounded_button_small">
+        <item name="android:textSize">@dimen/rounded_corner_button_small_text_size</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_mid_mid</item>
+        <item name="android:textColor">@color/main_background</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+    </style>
+
+    <style name="Gray_rounded_button_big_medium">
+        <item name="android:textSize">@dimen/rounded_corner_button_big_medium_text_size</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_mid_mid</item>
+        <item name="android:textColor">@color/button_no_function_text</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+    </style>
+
+    <style name="Gray_rounded_white_text_button_big_medium">
+        <item name="android:textSize">@dimen/rounded_corner_button_big_medium_text_size</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_mid_mid</item>
+        <item name="android:textColor">@color/button_white</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+    </style>
+
+    <style name="Gray_rounded_white_text_button_small">
+        <item name="android:textSize">@dimen/rounded_corner_button_small_text_size</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_mid_mid</item>
+        <item name="android:textColor">@color/button_white</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+    </style>
+
+    <style name="Light_text_big">
+        <item name="android:textSize">@dimen/light_button_big_text_size</item>
+        <item name="android:textColor">@color/button_light_text</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+    </style>
+
+    <style name="Light_text_small">
+        <item name="android:textSize">@dimen/light_button_small_text_size</item>
+        <item name="android:textColor">@color/button_light_text</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+    </style>
+
+    <style name="Gray_square_rounded_button_big">
+        <item name="android:textSize">@dimen/square_rounded_corner_button_big_text_size</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_mid_mid</item>
+        <item name="android:textColor">@color/button_white</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+    </style>
+
+    <style name="Gray_square_rounded_button_big_gray_text">
+        <item name="android:textSize">@dimen/square_rounded_corner_button_big_text_size</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_mid_mid</item>
+        <item name="android:textColor">@color/button_no_function_text</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+    </style>
+
+    <style name="White_square_rounded_button_medium_small">
+        <item name="android:textSize">@dimen/square_rounded_corner_button_medium_small_text_size</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_mid_mid</item>
+        <item name="android:textColor">@color/main_background</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+    </style>
+
+<!--    Label-->
+    <style name="Content_card_full_name">
+        <item name="android:textSize">@dimen/content_card_text_size</item>
+        <item name="android:textColor">@color/white_new</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+    </style>
+
+    <style name="Content_card_user_handle">
+        <item name="android:textSize">@dimen/content_card_user_handler_text_size</item>
+        <item name="android:textColor">@color/button_no_function_text</item>
+        <item name="android:fontFamily">@font/suisse_lntl_regular</item>
+    </style>
+
+    <style name="Content_card_time_stamp">
+        <item name="android:textSize">@dimen/content_card_time_stamp_text_size</item>
+        <item name="android:textColor">@color/button_no_function_text</item>
+        <item name="android:fontFamily">@font/suisse_lntl_regular</item>
+    </style>
+
+    <style name="Content_card_vid_length">
+        <item name="android:textSize">@dimen/content_card_vid_lenght_text_size</item>
+        <item name="android:textColor">@color/main_background</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+    </style>
+
+    <style name="In_responseto_header">
+        <item name="android:textSize">@dimen/content_card_in_responseto_header_text_size</item>
+        <item name="android:textColor">@color/white_new</item>
+        <item name="android:fontFamily">@font/gt_america_expanded_bold</item>
+    </style>
+
+    <style name="In_responseto_pub_title">
+        <item name="android:textSize">@dimen/content_card_in_responseto_pub_title_text_size</item>
+        <item name="android:textColor">@color/white_new</item>
+        <item name="android:fontFamily">@font/suisse_lntl_bold</item>
+    </style>
+
+    <style name="In_responseto_pub_name">
+        <item name="android:textSize">@dimen/content_card_pub_name_text_size</item>
+        <item name="android:textColor">@color/white_opacity</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+    </style>
+
+    <style name="Original_content_title">
+        <item name="android:textSize">@dimen/news_title</item>
+        <item name="android:textColor">@color/white_new</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+    </style>
+
+    <style name="News_header">
+        <item name="android:textSize">@dimen/news_header_title</item>
+        <item name="android:textColor">@color/white_new</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+    </style>
+
+    <style name="Profile_user_handle">
+        <item name="android:textSize">@dimen/profile_user_handle</item>
+        <item name="android:textColor">@color/white_new</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+    </style>
+
+    <style name="Profile_full_name">
+        <item name="android:textSize">@dimen/profile_user_handle</item>
+        <item name="android:textColor">@color/white_new</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+    </style>
+
+    <style name="Profile_bio">
+        <item name="android:textSize">@dimen/profile_bio</item>
+        <item name="android:textColor">@color/white_new</item>
+        <item name="android:fontFamily">@font/suisse_lntl_regular</item>
+        <item name="lineHeight">@dimen/line_height_125</item>
+    </style>
+
+    <style name="Profile_more">
+        <item name="android:textSize">@dimen/profile_bio</item>
+        <item name="android:textColor">@color/button_no_function_text</item>
+        <item name="android:fontFamily">@font/suisse_lntl_regular</item>
+        <item name="lineHeight">@dimen/line_height_125</item>
+    </style>
+
+    <style name="Profile_url">
+        <item name="android:textSize">@dimen/profile_bio</item>
+        <item name="android:textColor">@color/button_light_text</item>
+        <item name="android:fontFamily">@font/suisse_lntl_regular</item>
+        <item name="lineHeight">@dimen/line_height_125</item>
+    </style>
+
+    <style name="Profile_data_number">
+        <item name="android:textSize">@dimen/profile_data_number</item>
+        <item name="android:textColor">@color/white_new</item>
+        <item name="android:fontFamily">@font/suisse_lntl_semi_bold</item>
+    </style>
+
+    <style name="Profile_data_title">
+        <item name="android:textSize">@dimen/profile_data_title</item>
+        <item name="android:textColor">@color/button_no_function_text</item>
+        <item name="android:fontFamily">@font/suisse_lntl_regular</item>
+    </style>
+
+    <style name="MainText.H8_3.Regular_upload">
+        <item name="android:textSize">@dimen/text_size_large_pre_medium</item>
+        <item name="android:textColor">@color/white_grey</item>
+        <item name="android:fontFamily">@font/suisse_lntl_bold</item>
+    </style>
+
+    <style name="MainText.H8_3.Regular_upload_desc">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/white_grey</item>
+        <item name="android:fontFamily">@font/suisse_lntl_regular</item>
+    </style>
+
+    <style name="MainText.H8_3.Regular_button">
+        <item name="android:textSize">@dimen/text_size_medium_mid</item>
+        <item name="android:textColor">@color/white_grey</item>
+        <item name="android:fontFamily">@font/suisse_lntl_regular</item>
+    </style>
+
+    <style name="Dot">
+        <item name="android:textSize">@dimen/text_size_large_medium_mid</item>
+        <item name="android:textColor">@color/gray_dot</item>
+        <item name="android:fontFamily">@font/suisse_lntl_regular</item>
+    </style>
+    <style name="Dot_text">
+        <item name="android:textSize">@dimen/text_size_micro_mid</item>
+        <item name="android:textColor">@color/gray_dot</item>
+        <item name="android:fontFamily">@font/suisse_lntl_regular</item>
+    </style>
+
+    <style name="Category_new_title">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="lineHeight">@dimen/margin_padding_size_medium_small_mid_small</item>
+        <item name="android:fontFamily">@font/suisse_lntl_regular</item>
+        <item name="android:textColor">@color/gray_dot</item>
+    </style>
+    <style name="Category_new_name">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:fontFamily">@font/suisse_lntl_bold</item>
+        <item name="android:textColor">@color/white_grey</item>
+    </style>
+
+</resources>

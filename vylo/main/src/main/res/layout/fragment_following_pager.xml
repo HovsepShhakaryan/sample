@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_to_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nested_scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/focus_wrapper"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/first_title"
+                        style="@style/MainText.H5.Blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/suisse_lntl_regular"
+                        android:layout_marginHorizontal="@dimen/margin_padding_size_large_small_mid"
+                        android:layout_marginTop="@dimen/margin_padding_size_xlarge_pre_mid" />
+
+                    <com.vylo.common.widget.MainSearchView
+                        android:id="@+id/search"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_padding_size_small_mid"
+                        android:layout_marginTop="@dimen/margin_padding_size_medium_mid_mid" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/following_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="27dp"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:listitem="@layout/item_user" />
+
+                    <com.vylo.common.widget.EmptyStateView
+                        android:id="@+id/top_empty_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/margin_padding_size_xlarge_pre_mid"
+                        android:gravity="center_vertical"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone" />
+
+                    <com.vylo.common.widget.EmptyStateView
+                        android:id="@+id/bottom_empty_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone" />
+
+                    <com.vylo.common.widget.EmptyStateView
+                        android:id="@+id/bottom_empty_state_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/second_title"
+                        style="@style/MainText.H5.Blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/suisse_lntl_regular"
+                        android:layout_marginHorizontal="@dimen/margin_padding_size_large_small_mid"
+                        android:layout_marginTop="@dimen/margin_padding_size_xlarge_pre_mid" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/category_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="27dp"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:listitem="@layout/item_category_view" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <com.vylo.common.widget.MainProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

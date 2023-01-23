@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".signupinputdategender.presentation.fragment.SignUpGenderFragment">
+
+    <com.vylo.common.widget.MainNavigationBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin_padding_size_extra_small"
+            android:layout_marginStart="@dimen/margin_padding_size_medium_mid_small_small"
+            android:layout_marginEnd="@dimen/margin_padding_size_medium_mid_small_small">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/margin_padding_size_large_small_mid"
+                android:gravity="center"
+                android:text="@string/title_create_your_account"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/text_size_large_medium_small"
+                android:fontFamily="@font/suisse_lntl_semi_bold" />
+
+            <com.vylo.common.widget.MainInputType
+                android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_size_xxxlarge_mid"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_gender"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_marginTop="@dimen/margin_padding_size_xlarge"
+                android:layout_marginStart="@dimen/margin_padding_size_medium"
+                android:fontFamily="@font/suisse_lntl_regular"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_padding_size_medium_small_mid"
+                android:layout_marginTop="@dimen/margin_padding_size_medium_small_mid"
+                tools:listitem="@layout/item_gender"/>
+
+            <com.vylo.common.widget.MainInputType
+                android:id="@+id/input_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_size_xlarge"/>
+
+            <com.vylo.common.widget.MainButton
+                android:id="@+id/next_button"
+                android:layout_width="@dimen/rounded_corner_button_medium_width"
+                android:layout_height="@dimen/rounded_corner_button_big_height"
+                android:layout_gravity="end"
+                android:layout_marginHorizontal="@dimen/margin_padding_size_medium_small_mid"
+                android:layout_marginTop="@dimen/margin_padding_size_biggest_mid"
+                android:layout_marginBottom="@dimen/margin_padding_size_biggest_mid"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

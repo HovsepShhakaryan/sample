@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <include app:graph="@navigation/signup_nav_graph" />
+    <include app:graph="@navigation/reset_pass_nav_graph" />
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.vylo.auth.signinfragment.presentation.fragment.SignInFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_signIn"></fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.vylo.auth.mainauthfragment.presentation.fragment.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/toLoginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+</navigation>

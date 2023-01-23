@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Margins & Padding, 8 dp baseline -->
+    <dimen name="zero">0dp</dimen>
+    <dimen name="half_one">0.5dp</dimen>
+    <dimen name="one_half">1.5dp</dimen>
+    <dimen name="one">1dp</dimen>
+    <dimen name="margin_padding_size_extra_small_small">2dp</dimen>
+    <dimen name="margin_padding_size_extra_small_mid">3dp</dimen>
+    <dimen name="margin_padding_size_extra_small">4dp</dimen>
+    <dimen name="margin_padding_size_small_mid_extra">5dp</dimen>
+    <dimen name="margin_padding_size_small_mid">6dp</dimen>
+    <dimen name="margin_padding_size_small_small_mid">7dp</dimen>
+    <dimen name="margin_padding_size_small">8dp</dimen>
+    <dimen name="margin_padding_size_small_mid_small">9dp</dimen>
+    <dimen name="margin_padding_size_small_large">10dp</dimen>
+    <dimen name="margin_padding_size_medium_mid_small_small">11dp</dimen>
+    <dimen name="margin_padding_size_medium_small">12dp</dimen>
+    <dimen name="margin_padding_size_medium_small_small_mid">13dp</dimen>
+    <dimen name="margin_padding_size_medium_small_mid">14dp</dimen>
+    <dimen name="margin_padding_size_medium_small_mid_small">15dp</dimen>
+    <dimen name="margin_padding_size_medium">16dp</dimen>
+    <dimen name="margin_padding_size_medium_mid_mid_half">17dp</dimen>
+    <dimen name="margin_padding_size_medium_mid_mid">18dp</dimen>
+    <dimen name="margin_padding_size_medium_mid_small">19dp</dimen>
+    <dimen name="margin_padding_size_medium_mid">20dp</dimen>
+    <dimen name="margin_padding_size_large_pre_small">21dp</dimen>
+    <dimen name="margin_padding_size_large_small">22dp</dimen>
+    <dimen name="margin_padding_size_large_small_mid_mid">23dp</dimen>
+    <dimen name="margin_padding_size_large">24dp</dimen>
+    <dimen name="margin_padding_size_large_pre_small_mid">25dp</dimen>
+    <dimen name="margin_padding_size_large_pre_mid">26dp</dimen>
+    <dimen name="margin_padding_size_large_small_mid">27dp</dimen>
+    <dimen name="margin_padding_size_large_mid">28dp</dimen>
+    <dimen name="margin_padding_size_xlarge_small">30dp</dimen>
+    <dimen name="margin_padding_size_xlarge_small_mid">31dp</dimen>
+    <dimen name="margin_padding_size_xlarge">32dp</dimen>
+    <dimen name="margin_padding_size_xlarge_pre_mid">33dp</dimen>
+    <dimen name="margin_padding_size_xlarge_mid">34dp</dimen>
+    <dimen name="margin_padding_size_xlarge_mid_small">36dp</dimen>
+    <dimen name="margin_padding_size_pre_xxlarge">38dp</dimen>
+    <dimen name="margin_padding_size_xxlarge">40dp</dimen>
+    <dimen name="margin_padding_size_xxlarge_small_mid">42dp</dimen>
+    <dimen name="margin_padding_size_xxlarge_mid">44dp</dimen>
+    <dimen name="margin_padding_size_xxlarge_mid_mid">45dp</dimen>
+    <dimen name="margin_padding_size_xxxlarge">48dp</dimen>
+    <dimen name="margin_padding_size_xxxlarge_small_mid">50dp</dimen>
+    <dimen name="margin_padding_size_xxxlarge_small_small_mid">51dp</dimen>
+    <dimen name="margin_padding_size_xxxlarge_mid">54dp</dimen>
+    <dimen name="margin_padding_size_biggest">55dp</dimen>
+    <dimen name="margin_padding_size_biggest_mid">56dp</dimen>
+    <dimen name="margin_padding_size_biggest_mid_mid">60dp</dimen>
+    <dimen name="margin_padding_size_biggest_big">64dp</dimen>
+    <dimen name="margin_padding_size_ultra_biggest">86dp</dimen>
+    <dimen name="margin_padding_size_ultra_biggest_largest">90dp</dimen>
+
+    <!-- Font sizes -->
+    <dimen name="text_size_extra_nano">4sp</dimen>
+    <dimen name="text_size_nano_small">8sp</dimen>
+    <dimen name="text_size_nano">9sp</dimen>
+    <dimen name="text_size_extra_micro">10sp</dimen>
+    <dimen name="text_size_extra_micro_mid">11sp</dimen>
+    <dimen name="text_size_extra_micro_mid_half">11.5sp</dimen>
+    <dimen name="text_size_micro">12sp</dimen>
+    <dimen name="text_size_micro_mid">13sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_small_mid">15sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_medium_pre_mid">17sp</dimen>
+    <dimen name="text_size_medium_mid">18sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+    <dimen name="text_size_large_small_medium">22sp</dimen>
+    <dimen name="text_size_large_pre_medium">23sp</dimen>
+    <dimen name="text_size_large_medium">24sp</dimen>
+    <dimen name="text_size_large_medium_small">26sp</dimen>
+    <dimen name="text_size_large_medium_mid">28sp</dimen>
+    <dimen name="text_size_xlarge">34sp</dimen>
+    <dimen name="text_size_xlarge_mid">40sp</dimen>
+    <dimen name="text_size_xxlarge">45sp</dimen>
+    <dimen name="text_size_xxxlarge">56sp</dimen>
+    <dimen name="text_size_xxxultralarge">86sp</dimen>
+
+    <!-- Feed view -->
+    <dimen name="container_60">60dp</dimen>
+    <dimen name="container_72">72dp</dimen>
+    <dimen name="container_75">75dp</dimen>
+    <dimen name="container_80">80dp</dimen>
+    <dimen name="container_85">85dp</dimen>
+    <dimen name="container_88">88dp</dimen>
+    <dimen name="container_100">100dp</dimen>
+    <dimen name="container_108">108dp</dimen>
+    <dimen name="container_120">120dp</dimen>
+    <dimen name="container_133">133dp</dimen>
+    <dimen name="container_134">134dp</dimen>
+    <dimen name="container_140">140dp</dimen>
+    <dimen name="container_142">142dp</dimen>
+    <dimen name="container_149">149dp</dimen>
+    <dimen name="container_160">160dp</dimen>
+    <dimen name="container_178">178dp</dimen>
+    <dimen name="container_185">185dp</dimen>
+    <dimen name="container_195">195dp</dimen>
+    <dimen name="container_205">205dp</dimen>
+    <dimen name="container_235">235dp</dimen>
+    <dimen name="container_290">290dp</dimen>
+
+    <!--    New design-->
+    <dimen name="rounded_corner_button_big_height">44dp</dimen>
+    <dimen name="rounded_corner_button_medium_height">34dp</dimen>
+    <dimen name="rounded_corner_button_small_height">28dp</dimen>
+    <dimen name="rounded_corner_button_big_width">273dp</dimen>
+    <dimen name="rounded_corner_button_medium_width">130dp</dimen>
+    <dimen name="rounded_corner_button_small_width">105dp</dimen>
+    <dimen name="square_rounded_corner_button_big_width">105dp</dimen>
+    <dimen name="square_rounded_corner_button_big_height">34dp</dimen>
+    <dimen name="square_rounded_corner_button_medium_width">90dp</dimen>
+    <dimen name="square_rounded_corner_button_medium_height">28dp</dimen>
+    <dimen name="square_rounded_corner_button_small_width">64dp</dimen>
+    <dimen name="square_rounded_corner_button_small_height">28dp</dimen>
+
+    <!--    New design-->
+    <dimen name="rounded_corner_button_big_medium_text_size">14sp</dimen>
+    <dimen name="rounded_corner_button_small_text_size">12sp</dimen>
+    <dimen name="light_button_big_text_size">20sp</dimen>
+    <dimen name="light_button_small_text_size">14sp</dimen>
+    <dimen name="square_rounded_corner_button_big_text_size">12sp</dimen>
+    <dimen name="square_rounded_corner_button_medium_small_text_size">13sp</dimen>
+    <dimen name="content_card_text_size">13sp</dimen>
+    <dimen name="content_card_user_handler_text_size">13sp</dimen>
+    <dimen name="content_card_time_stamp_text_size">11sp</dimen>
+    <dimen name="content_card_vid_lenght_text_size">8sp</dimen>
+    <dimen name="content_card_in_responseto_header_text_size">9sp</dimen>
+    <dimen name="latter_spasing">1sp</dimen>
+    <dimen name="line_height_120">120sp</dimen>
+    <dimen name="content_card_in_responseto_pub_title_text_size">13sp</dimen>
+    <dimen name="content_card_pub_name_text_size">11sp</dimen>
+    <dimen name="news_title">15sp</dimen>
+    <dimen name="news_header_title">22sp</dimen>
+    <dimen name="profile_user_handle">14sp</dimen>
+    <dimen name="profile_bio">12sp</dimen>
+    <dimen name="line_height_125">12sp</dimen>
+    <dimen name="profile_data_number">14sp</dimen>
+    <dimen name="profile_data_title">11sp</dimen>
+
+</resources>

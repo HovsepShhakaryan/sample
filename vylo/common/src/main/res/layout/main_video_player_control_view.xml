@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_gravity="bottom"
+    android:background="@color/main"
+    android:layout_marginTop="15dp"
+    android:paddingHorizontal="@dimen/margin_padding_size_medium_mid_small_small"
+    android:paddingBottom="@dimen/margin_padding_size_medium">
+
+    <FrameLayout
+        android:id="@+id/play_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/exo_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:padding="@dimen/margin_padding_size_extra_small_small"
+            android:src="@drawable/ic_play" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/exo_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:padding="@dimen/margin_padding_size_extra_small_small"
+            android:src="@drawable/ic_pause" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/exo_position"
+        style="@style/MainText.H10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_padding_size_small_mid_extra"
+        app:layout_constraintBottom_toBottomOf="@+id/play_pause"
+        app:layout_constraintStart_toEndOf="@+id/play_pause"
+        app:layout_constraintTop_toTopOf="@+id/play_pause"
+        tools:text="0:08" />
+
+    <com.google.android.exoplayer2.ui.DefaultTimeBar
+        android:id="@+id/exo_progress_placeholder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_padding_size_medium_small"
+        android:layout_marginEnd="@dimen/margin_padding_size_small"
+        app:layout_constraintBottom_toBottomOf="@+id/play_pause"
+        app:layout_constraintEnd_toStartOf="@+id/exo_volume"
+        app:layout_constraintStart_toEndOf="@+id/exo_position"
+        app:layout_constraintTop_toTopOf="@+id/play_pause" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/exo_volume"
+        android:layout_width="26dp"
+        android:layout_height="25dp"
+        android:padding="@dimen/margin_padding_size_small_mid_extra"
+        android:src="@drawable/ic_volume"
+        app:layout_constraintBottom_toBottomOf="@+id/play_pause"
+        app:layout_constraintEnd_toStartOf="@+id/fullscreen"
+        app:layout_constraintTop_toTopOf="@+id/play_pause" />
+
+    <FrameLayout
+        android:id="@+id/fullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/play_pause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/play_pause">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/exo_fullscreen_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_padding_size_extra_small_small"
+            android:src="@drawable/ic_full_screen_enter" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/exo_fullscreen_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_padding_size_extra_small_small"
+            android:src="@drawable/ic_full_screen_exit" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

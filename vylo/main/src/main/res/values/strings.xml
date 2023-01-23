@@ -1,0 +1,253 @@
+<resources>
+    <string name="title_activity_main_flaw">MainFlawActivity</string>
+    <string name="label_home">Home</string>
+    <string name="label_newsstand">Newsstand</string>
+    <string name="label_create">Create</string>
+    <string name="label_trending">Trending</string>
+    <string name="label_profile">Profile</string>
+    <string name="label_no_feed">No feed is available</string>
+    <string name="label_respond">Respond</string>
+    <string name="label_responses">Responses</string>
+    <string name="label_response">Response</string>
+    <string name="title_select_categories">Select category</string>
+    <string name="label_like">Like</string>
+    <string name="label_insightful">I find this insightful</string>
+    <string name="label_share">Share</string>
+    <string name="label_copy_link">Copy link</string>
+    <string name="label_report">Report</string>
+    <string name="label_share_link">Share Link</string>
+    <string name="label_page_following">Following</string>
+    <string name="label_following_vylo">Vylo</string>
+    <string name="label_following_newsstand">Newsstand</string>
+    <string name="label_find_new_users">Find New Users to Follow</string>
+    <string name="label_find_users">Find Users to Follow</string>
+    <string name="label_find_new_publishers">Find New Publishers to Follow</string>
+    <string name="label_find_publishers">Find Publishers to Follow</string>
+    <string name="label_find_category">Find Category to Follow</string>
+    <string name="label_find_new_categories">Find New Categories to Follow</string>
+    <string name="label_profile_posts">Posts</string>
+    <string name="label_profile_followers">Followers</string>
+    <string name="label_profile_following">Following</string>
+    <string name="button_edit_profile">Edit Profile</string>
+    <string name="no_profile_data">No profile data is available</string>
+    <string name="no_profile_news">No profile news is available</string>
+    <string name="no_trending_data">No trending data is available</string>
+    <string name="no_followers_data">No followers is available</string>
+    <string name="no_followings_data">No followings is available</string>
+    <string name="no_users_data">No users is available</string>
+    <string name="no_publishers_data">No publishers is available</string>
+    <string name="no_categories_data">No categories is available</string>
+    <string name="no_activity_data">No activity is available</string>
+    <string name="no_insightful_data">No insightful data is available</string>
+    <string name="label_in_response_to">IN RESPONSE TO</string>
+    <string name="label_record_video">Recorde \n video</string>
+    <string name="label_record_audio">Recorde \n audio</string>
+    <string name="label_upload_video_audio">Upload \n video/audio</string>
+    <string name="label_edit_thumbnail">Edit \n thumbail</string>
+    <string name="label_edit_video_audio">Edit \n video/audio</string>
+    <string name="label_recent">RECENT</string>
+    <string name="label_clear">CLEAR</string>
+    <string name="label_trending_upercase">TRENDING</string>
+    <string name="label_kebab_private">This post is private and waiting to be approved before it is publicly viewable</string>
+    <string name="label_kebab_edit_video">Edit</string>
+    <string name="label_kebab_share_video">Share</string>
+    <string name="label_kebab_coly_link_video">Copy link</string>
+    <string name="label_kebab_delete_video">Delete</string>
+    <string name="label_private">Private</string>
+    <string name="label_clipboard">Copied Link to Clipboard</string>
+    <string name="no_news_data">No news data is available</string>
+    <string name="title_column_report">Report</string>
+    <string name="title_user_report">Help us keep Vylo a safe and awesome place. What issue with this user are you reporting?</string>
+    <string name="edit_profile_error">Edit profile error</string>
+    <string name="edit_personal_information_error">Edit personal information error</string>
+    <string name="label_edit_profile">Edit profile</string>
+    <string name="button_profile_save">Save</string>
+    <string name="label_change_profile_photo">Change Profile Photo</string>
+    <string name="label_personal_information_settings">Personal information settings</string>
+    <string name="label_personal_information">Personal information</string>
+    <string name="label_provide_personal_information">Provide your personal information, even if the account is used for business, a pet, or something else. This won’t be viewable on your public profile.</string>
+    <string name="label_profile_name">Name</string>
+    <string name="label_profile_username">Username</string>
+    <string name="label_profile_website">Website</string>
+    <string name="label_profile_bio">Bio</string>
+    <string name="label_profile_email">Email</string>
+    <string name="label_profile_phone">Phone</string>
+    <string name="label_profile_gender">Gender</string>
+    <string name="label_profile_birthday">Birthday</string>
+    <string name="label_profile_name_hint">Add your name</string>
+    <string name="label_profile_username_hint">Add your username</string>
+    <string name="label_profile_website_hint">Add your website</string>
+    <string name="label_profile_bio_hint">Add your bio</string>
+    <string name="label_profile_email_hint">Add your email</string>
+    <string name="label_profile_phone_hint">Add your phone number</string>
+    <string name="label_profile_gender_hint">Add your gender</string>
+    <string name="label_profile_birthday_hint">Add your birthday</string>
+    <string name="data_save_successfully">Changes are saved</string>
+    <string name="hamburger_my_insights">My Insights</string>
+    <string name="hamburger_my_contacts">My Contacts</string>
+    <string name="hamburger_settings_and_privacy">Settings and privacy</string>
+
+    <string name="label_settings_and_privacy">Settings and privacy</string>
+    <string name="my_account">My Account</string>
+    <string name="follow_invite_friends">Follow and Invite Friends</string>
+    <string name="push_notifications">Push Notifications</string>
+    <string name="email_settings">Email Setttings</string>
+    <string name="privacy">Privacy</string>
+    <string name="security">Security</string>
+    <string name="connected_account">Connected Accounts</string>
+    <string name="help">Help</string>
+    <string name="about">About</string>
+
+    <string name="personal_information">Personal information</string>
+    <string name="change_my_password">Change my password</string>
+    <string name="request_verification">Request verification</string>
+    <string name="delete_account">Delete account</string>
+    <string name="log_out">Log out</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="logout_dialog_message">Are you sure you want to log out of Vylo?</string>
+
+    <string name="label_update_password">Update password</string>
+
+    <string name="from_vylo">From Vylo</string>
+    <string name="updates_on_vylo">Updates on Vylo features</string>
+    <string name="get_emails_for_vylo_experience">Get emails to find out what’s how to make the most of your Vylo experience.</string>
+
+    <string name="app_version">Version</string>
+    <string name="get_help">Get help</string>
+    <string name="send_crash_reports">Send crash reports</string>
+    <string name="automatically_send_crash">Automatically send crash reports to Vylo’s service team to help improve this application.</string>
+    <string name="legal">Legal</string>
+    <string name="terms_of_service">Terms of service</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="cookie_use">Cookie use</string>
+    <string name="legal_notices">Legal notices</string>
+    <string name="contact_us">Contact us</string>
+    <string name="copyright">Copyright © 2022 Vylo, Inc.</string>
+
+    <string name="label_current_password">Current password</string>
+    <string name="label_new_password">New password</string>
+    <string name="label_confirm_password">Confirm password</string>
+    <string name="label_current_password_hint">Add current password</string>
+    <string name="label_new_password_hint">Add new password</string>
+    <string name="label_confirm_password_hint">Confirm new password</string>
+    <string name="input_current_password">Please input current password</string>
+    <string name="input_new_password">Please input new password</string>
+    <string name="confirm_new_password">Please confirm new password</string>
+    <string name="success_password_changed">Password has been successfully changed</string>
+
+    <string name="invite_friends_by_whats_app">Invite friends by WhatsApp</string>
+    <string name="invite_friends_by_sms">Invite friends by SMS</string>
+    <string name="invite_friends_by_email">Invite friends by email</string>
+    <string name="invite_friends_by_link">Invite friends by link</string>
+
+    <string name="notification_new_followers">New followers</string>
+    <string name="notification_responses">Responses to your posts</string>
+    <string name="notification_likes">Likes</string>
+    <string name="notification_from_vylo">From Vylo</string>
+
+    <string name="privacy_responses_account">Private reponses / account</string>
+    <string name="privacy_feature_coming_soon">This feature coming soon.</string>
+    <string name="privacy_connections">Connections</string>
+    <string name="privacy_blocked_accounts">Blocked accounts</string>
+    <string name="privacy_muted_accounts">Muted accounts</string>
+
+    <string name="connected_account_facebook">Facebook</string>
+    <string name="connected_account_google">Google</string>
+    <string name="connected_account_email">Email</string>
+    <string name="connected_account_connect_disconnect_account">Click to connect / disconnect Account</string>
+
+    <string name="label_showing">Showing:</string>
+
+    <string name="view_by_category">View by Category</string>
+    <string name="no_category_data">No category data is available</string>
+
+    <string name="delete_post">Delete post?</string>
+    <string name="action_undone">This action cannot be undone.</string>
+    <string name="deleted_news">News was deleted</string>
+    <string name="label_recommended">Recommended</string>
+    <string name="label_search">Search</string>
+    <string name="label_close">Close</string>
+
+    <string name="label_upload_video_title">Upload video</string>
+    <string name="label_video_format">mp4</string>
+    <string name="label_file_type">video</string>
+    <string name="label_audio_format">mp3</string>
+    <string name="label_audio_file_type">audio</string>
+    <string name="label_next">Next</string>
+    <string name="label_title">Title</string>
+    <string name="label_title_body">Give your video a title</string>
+    <string name="label_response_to">Response to</string>
+    <string name="label_description">Category</string>
+    <string name="label_description_body">Select</string>
+    <string name="title_categories">All categories</string>
+    <string name="title_favorites">All favorites</string>
+    <string name="title_saved_to">Saved to</string>
+    <string name="label_input_title">Please, input title</string>
+    <string name="label_upload_video">Please, upload video</string>
+    <string name="label_edit">Edit</string>
+    <string name="label_edit_cover">Edit your cover image</string>
+    <string name="button_done">Done</string>
+    <string name="label_record_video_sheet">Record Video</string>
+    <string name="label_record_audi_sheet">Record Audio</string>
+    <string name="label_upload_video_sheet">Upload Video</string>
+
+    <string name="label_search_results">Search Results</string>
+    <string name="label_vylo">Vylo</string>
+    <string name="label_news_stand">Newsstand</string>
+    <string name="label_categories">Categories</string>
+    <string name="label_profiles">Profiles</string>
+    <string name="label_no_vylo">No data is available</string>
+    <string name="label_responded_to">responded to</string>
+    <string name="label_by">by</string>
+    <string name="label_browse_all_categories">Browse All Categories A-Z:</string>
+    <string name="label_no_data_found">No search results in this option. \n Try other categories here.</string>
+    <string name="label_no_data_bottom">Nothing to show for your search in this category. \n Search results may be active in the other \n categories here.</string>
+
+    <string name="label_no_results">No results</string>
+
+    <string name="label_delete_account">Delete your account</string>
+    <string name="title_delete_account">This will delete your account on Vylo</string>
+    <string name="subtitle_delete_account">You are about to delte your Vylo account. Your display name, @username, and public profile will no longer be viewable anywhere on Vylo.</string>
+    <string name="title_deleting_account">Deleting your account is permanent</string>
+    <string name="subtitle_deleting_account">It is important to note that this action is permanent. We currently do not support a “deactivate” function for you to later activate your account again later. As such, if you delete your account, your profile, content, comments, insights, and followers will be permanently deleted.</string>
+    <string name="delete_account_question">Are you sure you want to delete your account on Vylo?</string>
+    <string name="delete_account_success">Account has been deleted</string>
+    <string name="delete_account_error">Account has not been deleted</string>
+    <string name="delete_dialog_button">Delete</string>
+
+    <string name="copy_profile_url">Copy profile URL</string>
+    <string name="share_this_profile">Share this profile</string>
+    <string name="block_user">Block User</string>
+    <string name="report_user">Report User</string>
+
+    <string name="title_block_user">Block %1$s</string>
+    <string name="message_block_user">%1$s will no longer be able to follow or message you, and you will not see notifications from %1$s</string>
+    <string name="label_block">Block</string>
+    <string name="label_something_wrong">Something went wrong</string>
+
+    <string name="label_activity">Activity</string>
+    <string name="text_responded_to">responded to</string>
+    <string name="text_by">by</string>
+    <string name="text_following">started following you</string>
+    <string name="text_uploaded">uploaded</string>
+
+    <string name="title_insightful">Things I Found Insightful</string>
+
+    <string name="vylo_graph">com.vylo.androidapplication:id/vylo_main_graph</string>
+    <string name="newsstand_graph">com.vylo.androidapplication:id/news_stand_main_graph</string>
+    <string name="trending_graph">com.vylo.androidapplication:id/category_main_graph</string>
+    <string name="profile_graph">com.vylo.androidapplication:id/profile_main_graph</string>
+
+    <string name="label_error">Error</string>
+    <string name="label_select_category">Please, select category</string>
+    <string name="label_ok">Ok</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_write_caption">Write a caption...</string>
+    <string name="label_add_details">Add details</string>
+    <string name="label_title_description">Description</string>
+    <string name="label_view_all_favorites">View all Favorites</string>
+    <string name="label_see_all_categories">See all categories</string>
+
+    <string name="label_publish">Publish</string>
+    <string name="label_all_categories">All categories</string>
+</resources>

@@ -1,0 +1,1 @@
+package com.vylo.main.followmain.followingfragment.domain.entity.response

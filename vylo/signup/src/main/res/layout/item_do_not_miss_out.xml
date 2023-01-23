@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_padding_size_medium_small_mid"
+    android:orientation="horizontal"
+    tools:background="@color/main">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/container_of_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/margin_padding_size_medium_small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/margin_padding_size_xxlarge_mid_mid"
+            android:layout_height="@dimen/margin_padding_size_xxlarge_mid_mid"
+            android:scaleType="centerCrop"
+            android:src="@drawable/portrait_placeholder" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/name"
+        style="@style/MainText.H6_3.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_padding_size_small_large"
+        android:includeFontPadding="false"
+        app:layout_constraintStart_toEndOf="@+id/container_of_avatar"
+        app:layout_constraintTop_toTopOf="@+id/container_of_avatar"
+        tools:text="Joe Rogan" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/subname"
+        style="@style/MainText.H7_1.Grey.Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding_size_extra_small_small"
+        android:includeFontPadding="false"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:text="\@joerogan" />
+
+    <com.vylo.common.widget.MainButton
+        android:id="@+id/button_following"
+        android:layout_width="@dimen/rounded_corner_button_small_width"
+        android:layout_height="@dimen/rounded_corner_button_medium_height"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/description"
+        style="@style/MainText.H8_3.Regular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding_size_small_mid"
+        android:includeFontPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/subname"
+        app:layout_constraintTop_toBottomOf="@+id/subname"
+        tools:text="Get to know the things happening in health,
+wellness and an active lifestyle. Follow my basics
+to keep your mind and body sharp and in line." />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

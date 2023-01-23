@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/main"
+    tools:context=".signupdonotmissout.presentation.fragment.SignUpDoNotMissOutFragment">
+
+    <com.vylo.common.widget.MainNavigationBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/margin_padding_size_medium_mid_small_small"
+            android:layout_marginTop="@dimen/margin_padding_size_extra_small"
+            android:layout_marginEnd="@dimen/margin_padding_size_medium_mid_small_small"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/margin_padding_size_large_small_mid"
+                android:fontFamily="@font/suisse_lntl_semi_bold"
+                android:gravity="center"
+                android:text="@string/title_do_not_miss_out"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/text_size_large_medium_small"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/label_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/margin_padding_size_large_small_mid"
+                android:fontFamily="@font/suisse_lntl_regular"
+                android:gravity="center"
+                android:text="@string/label_do_not_miss_out_info"
+                android:textColor="@color/text"
+                app:lineHeight="19dp"
+                android:textSize="@dimen/text_size_micro_mid"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar_title" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/follow_title_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_padding_size_xxlarge_mid_mid"
+                android:fontFamily="@font/suisse_lntl_semi_bold"
+                android:gravity="center"
+                android:text="@string/label_follow_one_or_more"
+                android:textColor="@color/secondary"
+                android:textSize="@dimen/text_size_medium_mid"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/label_info" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/margin_padding_size_medium"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toTopOf="@+id/next_button"
+                app:layout_constraintTop_toBottomOf="@+id/follow_title_info"
+                tools:itemCount="2"
+                tools:listitem="@layout/item_do_not_miss_out" />
+
+            <!--            <View-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="@dimen/container_75"-->
+            <!--                android:background="@drawable/ic_rectangle"-->
+            <!--                app:layout_constraintBottom_toTopOf="@+id/next_button" />-->
+
+            <com.vylo.common.widget.MainButton
+                android:id="@+id/next_button"
+                android:layout_width="@dimen/rounded_corner_button_big_width"
+                android:layout_height="@dimen/rounded_corner_button_big_height"
+                android:layout_marginBottom="@dimen/margin_padding_size_biggest_mid"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

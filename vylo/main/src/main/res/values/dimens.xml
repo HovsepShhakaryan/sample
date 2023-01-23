@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Margins & Padding, 8 dp baseline -->
+    <dimen name="zero">0dp</dimen>
+    <dimen name="half_one">0.5dp</dimen>
+    <dimen name="margin_padding_size_extra_small_small">2dp</dimen>
+    <dimen name="margin_padding_size_extra_small_mid">3dp</dimen>
+    <dimen name="margin_padding_size_extra_small">4dp</dimen>
+    <dimen name="margin_padding_size_small_mid_extra">5dp</dimen>
+    <dimen name="margin_padding_size_small_mid">6dp</dimen>
+    <dimen name="margin_padding_size_small_small_mid">7dp</dimen>
+    <dimen name="margin_padding_size_small">8dp</dimen>
+    <dimen name="margin_padding_size_small_mid_small">9dp</dimen>
+    <dimen name="margin_padding_size_small_middle">10dp</dimen>
+    <dimen name="margin_padding_size_medium_mid_small_small">11dp</dimen>
+    <dimen name="margin_padding_size_medium_small">12dp</dimen>
+    <dimen name="margin_padding_size_medium_small_small_mid">13dp</dimen>
+    <dimen name="margin_padding_size_medium_small_mid">14dp</dimen>
+    <dimen name="margin_padding_size_medium_small_mid_small">15dp</dimen>
+    <dimen name="margin_padding_size_medium">16dp</dimen>
+    <dimen name="margin_padding_size_medium_mid_mid_half">17dp</dimen>
+    <dimen name="margin_padding_size_medium_mid_mid">18dp</dimen>
+    <dimen name="margin_padding_size_medium_mid_small">19dp</dimen>
+    <dimen name="margin_padding_size_medium_mid">20dp</dimen>
+    <dimen name="margin_padding_size_large_pre_small">21dp</dimen>
+    <dimen name="margin_padding_size_large_small">22dp</dimen>
+    <dimen name="margin_padding_size_large_small_mid">23dp</dimen>
+    <dimen name="margin_padding_size_large">24dp</dimen>
+    <dimen name="margin_padding_size_large_pre_small_mid">25dp</dimen>
+    <dimen name="margin_padding_size_large_pre_mid">26dp</dimen>
+    <dimen name="margin_padding_size_large_mid">28dp</dimen>
+    <dimen name="margin_padding_size_large_mid_mid">29dp</dimen>
+    <dimen name="margin_padding_size_xlarge_small">31dp</dimen>
+    <dimen name="margin_padding_size_xlarge">32dp</dimen>
+    <dimen name="margin_padding_size_xlarge_pre_mid">33dp</dimen>
+    <dimen name="avatar_dimensions">34dp</dimen>
+    <dimen name="margin_padding_size_pre_xxlarge">38dp</dimen>
+    <dimen name="margin_padding_size_xxlarge">40dp</dimen>
+    <dimen name="margin_padding_size_xxlarge_mid">46dp</dimen>
+    <dimen name="margin_padding_size_xxxlarge">48dp</dimen>
+    <dimen name="margin_padding_size_biggest">55dp</dimen>
+    <dimen name="margin_padding_size_biggest_mid">61dp</dimen>
+
+    <!-- Font sizes -->
+    <dimen name="text_size_extra_nano">4sp</dimen>
+    <dimen name="text_size_extra_nano_mid">8sp</dimen>
+    <dimen name="text_size_nano">9sp</dimen>
+    <dimen name="text_size_extra_micro">10sp</dimen>
+    <dimen name="text_size_extra_micro_mid">11sp</dimen>
+    <dimen name="text_size_micro">12sp</dimen>
+    <dimen name="text_size_micro_mid">13sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_medium_mid">18sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+    <dimen name="text_size_large_medium">24sp</dimen>
+    <dimen name="text_size_large_medium_small">26sp</dimen>
+    <dimen name="text_size_large_medium_mid">28sp</dimen>
+    <dimen name="text_size_xlarge">34sp</dimen>
+    <dimen name="text_size_xlarge_mid">40sp</dimen>
+    <dimen name="text_size_xxlarge">45sp</dimen>
+    <dimen name="text_size_xxxlarge">56sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Feed view -->
+    <dimen name="container_52">52dp</dimen>
+    <dimen name="container_82">82dp</dimen>
+    <dimen name="container_73">73dp</dimen>
+    <dimen name="container_80">80dp</dimen>
+    <dimen name="container_84">84dp</dimen>
+    <dimen name="container_140">140dp</dimen>
+    <dimen name="container_144">144dp</dimen>
+    <dimen name="container_150">150dp</dimen>
+    <dimen name="container_120">120dp</dimen>
+    <dimen name="container_100">100dp</dimen>
+
+
+</resources>

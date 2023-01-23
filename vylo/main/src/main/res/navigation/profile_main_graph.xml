@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_main_graph"
+    app:startDestination="@id/mainProfileFragment">
+    <fragment
+        android:id="@+id/mainProfileFragment"
+        android:name="com.vylo.main.profilefragment.presentation.fragment.ProfileFragment"
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/toFollowFragment"
+            app:destination="@id/followFragment" />
+        <action
+            android:id="@+id/toSettingsPrivacyFragment"
+            app:destination="@id/settingsPrivacyFragment" />
+        <action
+            android:id="@+id/toUploadFragment"
+            app:destination="@id/uploadFragment" />
+        <action
+            android:id="@+id/toEditProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/toVideoFragment"
+            app:destination="@id/videoFragment" />
+        <action
+            android:id="@+id/action_mainProfileFragment_to_insightfulFragment2"
+            app:destination="@id/insightfulFragment2" />
+        <action
+            android:id="@+id/action_mainProfileFragment_to_activityFragment2"
+            app:destination="@id/activityFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/followFragment"
+        android:name="com.vylo.main.followmain.followfragment.presentation.fragment.FollowFragment"
+        android:label="FollowFragment">
+        <action
+            android:id="@+id/action_followFragment_to_followingSearchFragment"
+            app:destination="@id/followingSearchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsPrivacyFragment"
+        android:name="com.vylo.main.settingsprivacy.presentation.fragment.SettingsPrivacyFragment"
+        android:label="SettingsPrivacyFragment">
+        <action
+            android:id="@+id/toMyAccountFragment"
+            app:destination="@id/myAccountFragment" />
+        <action
+            android:id="@+id/toPushNotificationsFragment"
+            app:destination="@id/pushNotificationsFragment" />
+        <action
+            android:id="@+id/toEmailSettingsFragment"
+            app:destination="@id/emailSettingsFragment" />
+        <action
+            android:id="@+id/toSecurityFragment"
+            app:destination="@id/securityFragment" />
+        <action
+            android:id="@+id/toPrivacyFragment"
+            app:destination="@id/privacyFragment" />
+        <action
+            android:id="@+id/toAboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/toConnectedAccountsFragment"
+            app:destination="@id/connectedAccountsFragment" />
+        <action
+            android:id="@+id/toFollowInviteFriendsFragment"
+            app:destination="@id/followInviteFriendsFragment" />
+        <action
+            android:id="@+id/toWebFragment"
+            app:destination="@id/webFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myAccountFragment"
+        android:name="com.vylo.main.settingsprivacy.presentation.fragment.myaccount.presentation.fragment.MyAccountFragment"
+        android:label="MyAccountFragment">
+        <action
+            android:id="@+id/toPersonalInformationFragment"
+            app:destination="@id/personalInformationFragment" />
+        <action
+            android:id="@+id/toUpdatePasswordFragment"
+            app:destination="@id/updatePasswordFragment" />
+        <action
+            android:id="@+id/toDeleteAccountFragment"
+            app:destination="@id/deleteAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pushNotificationsFragment"
+        android:name="com.vylo.main.settingsprivacy.presentation.fragment.pushnotifications.presentation.fragment.PushNotificationsFragment"
+        android:label="PushNotificationsFragment"/>
+    <fragment
+        android:id="@+id/emailSettingsFragment"
+        android:name="com.vylo.main.settingsprivacy.presentation.fragment.emailsettings.presentation.fragment.EmailSettingsFragment"
+        android:label="EmailSettingsFragment" />
+    <fragment
+        android:id="@+id/securityFragment"
+        android:name="com.vylo.main.settingsprivacy.presentation.fragment.security.presentation.fragment.SecurityFragment"
+        android:label="SecurityFragment" />
+    <fragment
+        android:id="@+id/privacyFragment"
+        android:name="com.vylo.main.settingsprivacy.presentation.fragment.privacy.presentation.fragment.PrivacyFragment"
+        android:label="PrivacyFragment" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.vylo.main.settingsprivacy.presentation.fragment.about.presentation.fragment.AboutFragment"
+        android:label="AboutFragment">
+        <action
+            android:id="@+id/action_aboutFragment_to_webFragment"
+            app:destination="@id/webFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/connectedAccountsFragment"
+        android:name="com.vylo.main.settingsprivacy.presentation.fragment.connectedaccounts.presentation.fragment.ConnectedAccountsFragment"
+        android:label="ConnectedAccountsFragment" />
+    <fragment
+        android:id="@+id/followInviteFriendsFragment"
+        android:name="com.vylo.main.settingsprivacy.presentation.fragment.followinvitefriends.presentation.fragment.FollowInviteFriendsFragment"
+        android:label="FollowInviteFriendsFragment" />
+    <fragment
+        android:id="@+id/webFragment"
+        android:name="com.vylo.main.webfragment.presentation.fragment.WebFragment"
+        android:label="fragment_web"
+        tools:layout="@layout/fragment_web" />
+    <fragment
+        android:id="@+id/uploadFragment"
+        android:name="com.vylo.main.responsemain.upload.presentation.fragment.UploadFragment"
+        android:label="UploadFragment"/>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.vylo.main.profilefragment.presentation.fragment.EditProfileFragment"
+        android:label="EditProfileFragment">
+        <action
+            android:id="@+id/toPersonalInformationFragment"
+            app:destination="@id/personalInformationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigationFragment"
+        android:name="com.vylo.main.navigation.presentation.fragment.NavigationFragment"
+        android:label="NavigationFragment"
+        tools:layout="@layout/fragment_navigation_response">
+        <action
+            android:id="@+id/action_navigationFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalInformationFragment"
+        android:name="com.vylo.main.profilefragment.presentation.fragment.PersonalInformationFragment"
+        android:label="PersonalInformationFragment" />
+    <fragment
+        android:id="@+id/updatePasswordFragment"
+        android:name="com.vylo.main.settingsprivacy.presentation.fragment.myaccount.presentation.updatepassword.presentation.fragment.UpdatePasswordFragment"
+        android:label="UpdatePasswordFragment" />
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.vylo.main.videofragment.presentation.fragment.VideoFragment"
+        android:label="VideoFragment"
+        tools:layout="@layout/fragment_video" />
+    <fragment
+        android:id="@+id/followingSearchFragment"
+        android:name="com.vylo.main.followmain.followingfragment.presentation.fragment.FollowingSearchFragment"
+        android:label="fragment_following_search"
+        tools:layout="@layout/fragment_following_search" >
+        <action
+            android:id="@+id/action_followingSearchFragment_to_mainProfileFragment"
+            app:destination="@id/mainProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deleteAccountFragment"
+        android:name="com.vylo.main.settingsprivacy.presentation.fragment.myaccount.presentation.deleteaccount.presentation.fragment.DeleteAccountFragment"
+        android:label="DeleteAccountFragment" />
+    <fragment
+        android:id="@+id/insightfulFragment2"
+        android:name="com.vylo.main.insightfulfragment.presentation.fragment.InsightfulFragment"
+        android:label="InsightfulFragment">
+        <action
+            android:id="@+id/action_insightfulFragment_to_mainProfileFragment"
+            app:destination="@id/mainProfileFragment" />
+        <action
+            android:id="@+id/action_insightfulFragment2_to_videoFragment"
+            app:destination="@id/videoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.vylo.main.categorymain.category.presentation.fragment.CategoryFragment"
+        android:label="CategoryFragment" />
+    <dialog
+        android:id="@+id/uploadSuccessFragment"
+        android:name="com.vylo.main.responsemain.upload.presentation.fragment.UploadSuccessFragment"
+        android:label="UploadSuccessFragment">
+        <action
+            android:id="@+id/action_uploadSuccessFragment_to_mainProfileFragment"
+            app:destination="@id/mainProfileFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/activityFragment2"
+        android:name="com.vylo.main.activityfragment.presentation.fragment.ActivityFragment"
+        android:label="ActivityFragment">
+        <action
+            android:id="@+id/action_activityFragment2_to_mainProfileFragment"
+            app:destination="@id/mainProfileFragment" />
+        <action
+            android:id="@+id/action_activityFragment2_to_videoFragment"
+            app:destination="@id/videoFragment" />
+        <action
+            android:id="@+id/action_activityFragment2_to_webFragment"
+            app:destination="@id/webFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/resp_frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="-30dp"
+            app:use_controller="false" />
+
+        <com.google.android.exoplayer2.ui.PlayerControlView
+            android:id="@+id/video_controller_view_audio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bar_height="50dp"
+            app:buffered_color="@color/primary"
+            app:controller_layout_id="@layout/audio_player_view"
+            app:hide_on_touch="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:played_color="@color/secondary"
+            app:scrubber_color="@color/secondary"
+            app:show_timeout="0"
+            android:layout_gravity="center_vertical"
+            app:scrubber_drawable="@drawable/ic_thumb_transparent"
+            app:unplayed_color="@color/primary" />
+
+    </FrameLayout>
+
+    <com.google.android.exoplayer2.ui.PlayerControlView
+        android:id="@+id/video_controller_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:bar_height="@dimen/margin_padding_size_extra_small_small"
+        app:buffered_color="@color/gray"
+        app:controller_layout_id="@layout/main_video_player_control_view"
+        app:hide_on_touch="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:played_color="@color/gray"
+        app:scrubber_color="@color/primary"
+        app:scrubber_drawable="@drawable/ic_thumb"
+        app:show_timeout="0"
+        app:unplayed_color="@color/white" />
+
+    <View
+        android:id="@+id/gradient_view"
+        android:layout_width="0dp"
+        android:layout_height="259dp"
+        android:layout_marginBottom="-35dp"
+        android:background="@drawable/ic_gradient_square"
+        app:layout_constraintBottom_toTopOf="@+id/resp_frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/main"
+        app:layout_constraintBottom_toBottomOf="@+id/resp_frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gradient_view" />
+
+    <com.vylo.common.widget.UserView
+        android:id="@+id/user_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_padding_size_medium_mid"
+        android:layout_marginBottom="@dimen/margin_padding_size_medium_small_small_mid"
+        app:layout_constraintBottom_toTopOf="@+id/resp_frame"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/kebab"
+        android:layout_width="@dimen/margin_padding_size_large_mid"
+        android:layout_height="@dimen/margin_padding_size_large_mid"
+        android:layout_marginEnd="@dimen/margin_padding_size_large_small"
+        android:src="@drawable/ic_more"
+        app:layout_constraintBottom_toBottomOf="@+id/user_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/user_view" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/share"
+        android:layout_width="@dimen/margin_padding_size_large_mid"
+        android:layout_height="@dimen/margin_padding_size_large_mid"
+        android:layout_marginBottom="@dimen/margin_padding_size_medium_mid_mid"
+        android:src="@drawable/ic_vylo_send"
+        app:layout_constraintBottom_toTopOf="@+id/kebab"
+        app:layout_constraintEnd_toEndOf="@+id/kebab"
+        app:layout_constraintStart_toStartOf="@+id/kebab" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/like"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/ic_insightful_nonactive"
+        app:layout_constraintBottom_toTopOf="@+id/share"
+        app:layout_constraintEnd_toEndOf="@+id/kebab"
+        app:layout_constraintStart_toStartOf="@+id/kebab" />
+
+    <FrameLayout
+        android:id="@+id/resp_frame"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_response"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_padding_size_medium_small"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.vylo.common.widget.ResponseView
+                android:id="@+id/response_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/news_title"
+                style="@style/MainText.H8_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_padding_size_medium_mid"
+                tools:text="lsdijgsigoseingoseigoseign" />
+
+            <com.vylo.common.widget.BottomNavigationBar
+                android:id="@+id/bottom_nav_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/secondary" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

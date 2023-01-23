@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    tools:context=".homefragment.presentation.fragment.HomeFragment">
+
+    <com.vylo.common.widget.MainNavigationBar
+        android:id="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/main_title"
+        style="@style/Category_new_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:layout_marginTop="@dimen/margin_padding_size_medium"
+        app:layout_constraintBottom_toTopOf="@+id/close"
+        app:layout_constraintTop_toBottomOf="@+id/main_title">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/half_one"
+                android:background="@color/gray_dot"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/category_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/margin_padding_size_large_small_mid"
+                tools:itemCount="3"
+                android:layout_marginTop="@dimen/margin_padding_size_medium"
+                android:layout_marginBottom="@dimen/margin_padding_size_medium"
+                tools:listitem="@layout/item_category_holder" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/label_name"
+                style="@style/MainText.H7_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_padding_size_large_mid"
+                android:fontFamily="@font/suisse_lntl_medium"
+                android:paddingHorizontal="@dimen/margin_padding_size_large_small_mid"
+                android:text="@string/title_categories"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/button_actions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:layout_marginVertical="@dimen/margin_padding_size_medium">
+
+                <com.vylo.common.widget.MainButton
+                    android:id="@+id/button_view_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/rounded_corner_button_big_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginHorizontal="@dimen/margin_padding_size_large"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title_welcome" />
+
+                <com.vylo.common.widget.MainButton
+                    android:id="@+id/button_see_all_categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/rounded_corner_button_big_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title_welcome" />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/close"
+        style="@style/MainText.H5.White"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="@dimen/margin_padding_size_xlarge_pre_mid"
+        android:text="@string/label_close"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

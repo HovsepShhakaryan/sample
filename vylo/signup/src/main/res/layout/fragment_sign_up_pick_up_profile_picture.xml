@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".signupprofileimage.presentation.fragment.SignUpPickUpProfilePictureFragment">
+
+    <com.vylo.common.widget.MainNavigationBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_padding_size_extra_small"
+                android:layout_marginStart="@dimen/margin_padding_size_medium_mid_small_small"
+                android:layout_marginEnd="@dimen/margin_padding_size_medium_mid_small_small">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/margin_padding_size_large_small_mid"
+                    android:text="@string/title_pick_profile_picture"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/text_size_large_medium_small"
+                    android:fontFamily="@font/suisse_lntl_semi_bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/label_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/margin_padding_size_large_small_mid"
+                    android:text="@string/label_pick_profile_info"
+                    android:textColor="@color/text"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_micro_mid"
+                    android:fontFamily="@font/suisse_lntl_semi_bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/toolbar_title"/>
+
+                <FrameLayout
+                    android:id="@+id/picture_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label_info"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="@dimen/container_100">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="@dimen/margin_padding_size_huge_more_large"
+                        android:layout_height="@dimen/margin_padding_size_huge_more_large"
+                        android:src="@drawable/ic_empty_profileimage"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/button_add_image"
+                        android:layout_width="@dimen/margin_padding_size_biggest"
+                        android:layout_height="@dimen/margin_padding_size_biggest"
+                        android:src="@drawable/ic_add_prof_pic"
+                        android:layout_gravity="bottom|right"/>
+
+                </FrameLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/button_skip"
+                    style="@style/Light_text_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_skip"
+                    android:layout_marginBottom="@dimen/margin_padding_size_large"
+                    android:layout_marginTop="@dimen/margin_padding_size_biggest_big"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/picture_container"/>
+
+                <com.vylo.common.widget.MainButton
+                    android:id="@+id/next_button"
+                    android:layout_width="@dimen/rounded_corner_button_big_width"
+                    android:layout_height="@dimen/rounded_corner_button_big_height"
+                    android:layout_marginTop="@dimen/margin_padding_size_xlarge_mid"
+                    android:layout_marginHorizontal="@dimen/margin_padding_size_medium_small_mid"
+                    android:layout_marginBottom="@dimen/margin_padding_size_large"
+                    app:layout_constraintTop_toBottomOf="@+id/button_skip"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.vylo.common.widget.MainProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </FrameLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

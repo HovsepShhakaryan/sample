@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_to_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--                <View-->
+                <!--                        android:id="@+id/focus_wrapper"-->
+                <!--                        android:layout_width="0dp"-->
+                <!--                        android:layout_height="0dp"-->
+                <!--                        android:focusable="true"-->
+                <!--                        android:focusableInTouchMode="true" />-->
+
+                <!--                <androidx.appcompat.widget.AppCompatTextView-->
+                <!--                        android:id="@+id/find_users_title"-->
+                <!--                        style="@style/MainText.H5.Blue"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginHorizontal="@dimen/margin_padding_size_large_small_mid"-->
+                <!--                        android:layout_marginTop="@dimen/margin_padding_size_medium_mid_small"-->
+                <!--                        android:layout_marginBottom="@dimen/margin_padding_size_small_mid_small"-->
+                <!--                        android:text="@string/label_find_new_users" />-->
+
+                <!--                <com.vylo.common.widget.MainSearchView-->
+                <!--                        android:id="@+id/search"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginHorizontal="@dimen/margin_padding_size_small_mid"-->
+                <!--                        android:layout_marginTop="@dimen/margin_padding_size_small_middle" />-->
+
+                <!--                <androidx.recyclerview.widget.RecyclerView-->
+                <!--                        android:id="@+id/follow_list"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginTop="@dimen/margin_padding_size_medium_mid"-->
+                <!--                        android:paddingHorizontal="@dimen/margin_padding_size_large_small_mid"-->
+                <!--                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+                <!--                        tools:listitem="@layout/user_view" />-->
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

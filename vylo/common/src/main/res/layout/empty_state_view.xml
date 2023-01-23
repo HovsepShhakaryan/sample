@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llContainer"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/top_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/half_one"
+        android:visibility="gone"
+        android:background="@color/white_grey_text" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/container_185"
+        android:visibility="gone"
+        tools:src="@drawable/ic_exclamation"
+        tools:visibility="visible" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/big_title"
+        style="@style/MainText.H3_1_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_padding_size_xxlarge_mid_mid"
+        android:layout_marginTop="@dimen/margin_padding_size_medium_mid_mid"
+        android:gravity="center"
+        android:visibility="gone"
+        tools:text="You are not following any publishers or users yet."
+        tools:visibility="visible" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        style="@style/MainText.H3_1_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_padding_size_xxlarge_mid_mid"
+        android:gravity="center"
+        android:visibility="gone"
+        tools:text="You are not following any publishers or users yet."
+        tools:visibility="visible" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/sub_title"
+        style="@style/MainText.H8_8_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_padding_size_biggest"
+        android:layout_marginTop="@dimen/margin_padding_size_large_mid"
+        android:gravity="center"
+        android:visibility="gone"
+        tools:text="Follow the publishers, cateogries, and friends you want to hear from."
+        tools:visibility="visible" />
+
+    <com.vylo.common.widget.MainButton
+        android:id="@+id/first_button"
+        android:layout_width="@dimen/rounded_corner_button_big_width"
+        android:layout_height="@dimen/rounded_corner_button_big_height"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_padding_size_large_pre_mid"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <com.vylo.common.widget.MainButton
+        android:id="@+id/second_button"
+        android:layout_width="@dimen/rounded_corner_button_big_width"
+        android:layout_height="@dimen/rounded_corner_button_big_height"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_padding_size_medium_mid"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="common/src/main/res/drawable/ic_baseline_visibility.xml" value="0.138" />
+        <entry key="common/src/main/res/drawable/ic_baseline_visibility_off.xml" value="0.138" />
+        <entry key="common/src/main/res/layout/main_input_type.xml" value="0.3098958333333333" />
+        <entry key="main/src/main/res/layout/fragment_following_search.xml" value="0.2947916666666667" />
+        <entry key="resetpassword/src/main/res/layout/fragment_forgot_pass_code.xml" value="0.15070921985815602" />
+        <entry key="signup/src/main/res/layout/fragment_sign_up_create_password.xml" value="0.15070921985815602" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

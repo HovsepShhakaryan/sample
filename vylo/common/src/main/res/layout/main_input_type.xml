@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/full_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/input_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_micro_mid"
+        android:layout_marginStart="@dimen/margin_padding_size_small"
+        android:paddingBottom="@dimen/margin_padding_size_small"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/input_required"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_padding_size_small_mid"
+        app:layout_constraintTop_toTopOf="@+id/input_title"
+        app:layout_constraintBottom_toBottomOf="@+id/input_title"
+        app:layout_constraintStart_toEndOf="@+id/input_title"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/inout_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/input_title"
+        android:background="@drawable/shape_input_type">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/input_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="@dimen/text_size_medium"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:paddingEnd="@dimen/margin_padding_size_small"
+            app:layout_constraintEnd_toStartOf="@+id/action_icon"
+            android:layout_marginTop="@dimen/margin_padding_size_medium_small"
+            android:layout_marginBottom="@dimen/margin_padding_size_medium_small"
+            android:layout_marginEnd="@dimen/margin_padding_size_medium"
+            android:layout_marginStart="@dimen/margin_padding_size_medium"
+            android:background="@null"
+            android:textCursorDrawable="@drawable/shape_input_white_cursor"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/action_icon_into_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_padding_size_medium_small"
+            app:layout_constraintEnd_toStartOf="@+id/action_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/action_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/inout_type_info"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/inout_type_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="@dimen/text_size_medium_mid"
+            android:layout_marginEnd="@dimen/margin_padding_size_medium"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one"
+        android:visibility="gone"
+        android:layout_marginHorizontal="@dimen/margin_padding_size_medium"
+        android:background="@color/progress_bar_background"
+        app:layout_constraintTop_toBottomOf="@+id/inout_container"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/drop_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/inout_container"
+        app:layout_constraintEnd_toEndOf="@+id/inout_container"
+        app:layout_constraintTop_toBottomOf="@+id/inout_container"
+        tools:listitem="@layout/item_list_type"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/error_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:textSize="@dimen/text_size_micro"
+        android:layout_marginTop="@dimen/margin_padding_size_extra_small"
+        android:layout_marginStart="@dimen/margin_padding_size_small"
+        app:layout_constraintTop_toBottomOf="@+id/drop_list"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
